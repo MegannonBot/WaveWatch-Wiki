@@ -46,7 +46,7 @@ test -f WaveWatch-Wiki/outputs/product/2026-10-20_firebase-build-plan/2026-10-20
 echo "    Both cloned; the build plan is there"
 
 echo "4/5 Checking tools on the Mini"
-ssh "$MINI" 'export PATH=/opt/homebrew/bin:$PATH; for c in node npm java tmux; do command -v $c >/dev/null && echo "    $c: $($c --version 2>&1 | head -1)" || echo "    $c: MISSING (install before the run)"; done'
+ssh "$MINI" 'export PATH=/opt/homebrew/bin:$PATH; echo "    node: $(node --version 2>&1)"; echo "    npm: $(npm --version 2>&1)"; echo "    tmux: $(tmux -V 2>&1)"; (/usr/libexec/java_home -v 21+ >/dev/null 2>&1 && echo "    java: $(java -version 2>&1 | head -1)") || echo "    java: MISSING (the Firebase emulator needs Java 21 or newer)"'
 
 echo "5/5 Copying the prompt and the allow-list"
 scp -q "$PROMPT" "$MINI:wavewatch/mini-build-prompt.md"
