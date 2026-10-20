@@ -18,13 +18,14 @@
 ## Hard limits
 
 1. **No cloud.** Do not create, change or delete any Firebase or Google Cloud project, do not log in to Firebase, do not deploy. All backend work runs against the Firebase emulator with project id `demo-wavewatch`, which needs no login.
-2. **Long-running processes run in tmux, never as a Claude Code background task**: `tmux new -d -s emu-ww '<command> > ~/wavewatch/logs/emu-ww.log 2>&1'` for the emulator, `tmux new -d -s dev-ww ...` for the dev server, then poll the log with `tail`.
-3. **Leave other projects alone.** Do not touch `~/certech`, `~/skietgoed`, their tmux sessions, launchd jobs, emulators or ports. Use emulator ports that do not clash: Auth 9199, Firestore 8180, UI 4100 (set in `firebase.json`). If a port is in use, pick another and record it.
-4. **Git:** push only with the explicit branch name (`git push -u origin m0-m2`, `git push origin m0-m2`). Never push `main`, never force-push, never rewrite pushed history. Never commit `.env`, keys or real data.
-5. **Privacy:** the app records descriptions, never identities. No real people, places of residence, phone numbers, plates or WhatsApp content in code, fixtures, seeds, tests or screenshots. Fixtures are invented and marked `demo: true`.
-6. **Legal wording:** the app supports SAPS and gives no legal advice. Do not invent legal facts; mark anything not in the specs UNVERIFIED.
-7. **No em dashes** in code comments, strings, commit messages or reports.
-8. **Secrets:** none are needed for this run. `.env` is not readable to you; write `.env.example` only.
+2. **Java for the emulator:** use Java 21 from `/opt/homebrew/opt/openjdk@21` (Homebrew, not linked system-wide on purpose, because Skiet Goed builds use Java 17). Start every emulator command with `PATH=/opt/homebrew/opt/openjdk@21/bin:$PATH`, and put the same line in the `emu` npm script. Never run `brew link` or change the system Java.
+3. **Long-running processes run in tmux, never as a Claude Code background task**: `tmux new -d -s emu-ww '<command> > ~/wavewatch/logs/emu-ww.log 2>&1'` for the emulator, `tmux new -d -s dev-ww ...` for the dev server, then poll the log with `tail`.
+4. **Leave other projects alone.** Do not touch `~/certech`, `~/skietgoed`, their tmux sessions, launchd jobs, emulators or ports. Use emulator ports that do not clash: Auth 9199, Firestore 8180, UI 4100 (set in `firebase.json`). If a port is in use, pick another and record it.
+5. **Git:** push only with the explicit branch name (`git push -u origin m0-m2`, `git push origin m0-m2`). Never push `main`, never force-push, never rewrite pushed history. Never commit `.env`, keys or real data.
+6. **Privacy:** the app records descriptions, never identities. No real people, places of residence, phone numbers, plates or WhatsApp content in code, fixtures, seeds, tests or screenshots. Fixtures are invented and marked `demo: true`.
+7. **Legal wording:** the app supports SAPS and gives no legal advice. Do not invent legal facts; mark anything not in the specs UNVERIFIED.
+8. **No em dashes** in code comments, strings, commit messages or reports.
+9. **Secrets:** none are needed for this run. `.env` is not readable to you; write `.env.example` only.
 
 ## The run
 
