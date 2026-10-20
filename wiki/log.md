@@ -10,6 +10,11 @@ last_updated: 2026-10-20
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-20] setup | Mini prepared; first build run started
+
+**The Mini has both repositories, the WaveWatch key, Java 21 and the build prompt, and Franco started the M0 to M2 run.**
+Java 21 installed with Homebrew and left unlinked so Java 17 stays the system Java. Homebrew also upgraded 15 shared libraries. Added `PROJECT-INSTRUCTIONS.md` for the Claude Project.
+
 ## [2026-10-20] setup | Vault on GitHub
 
 **Franco moved the Claude Code configuration into place, created both repositories and pushed the vault to `MegannonBot/WaveWatch-Wiki`.**

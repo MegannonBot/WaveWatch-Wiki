@@ -35,14 +35,14 @@ last_updated: 2026-10-20
 | Vault shape | Copied from the Skiet Goed vault, which is the newest form of the Certech template | 2026-10-20 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] |
 | Claude Code configuration | Installed in `.claude/` | 2026-10-20 | [[runbooks/first-time-setup]] |
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
-| Builder | Claude Code on the Mac Mini, from prompts in `outputs/technology/` | 2026-10-20 | same |
+| Builder | Claude Code on the Mac Mini. First run (M0 to M2, WW-01 to WW-16) started 2026-10-20 on branch `m0-m2`; Java 21 installed unlinked for the emulator | 2026-10-20 | Franco, 2026-10-20 |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
-| 1 | Finish first-time setup: install the autosave, then run `start-on-mini.sh` ([[runbooks/first-time-setup]], steps 3 and 5) | The Mini run cannot start until it has the key and the clones |
+| 1 | Create the WaveWatch Claude Project with `PROJECT-INSTRUCTIONS.md` | Future sessions start with the rules and the vault |
 | 2 | Rule on the six proposals: stack, tenancy, roles, sign-in, Blaze timing, identity boundary ([[specs/firebase-architecture]]) | The Mini builds on them as defaults until ruled |
 | 3 | Which organisation runs WaveWatch: the CPF, a neighbourhood watch, a separate body, or MEGANNONME as service provider? | Sets the POPIA responsible party and who signs data-sharing agreements |
 | 4 | Switch the artifact to private, then invite Hannes with Can edit | Link visitors see no data; invitees get link-level access while a link is on |
