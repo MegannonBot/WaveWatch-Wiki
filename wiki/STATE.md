@@ -33,8 +33,8 @@ last_updated: 2026-10-20
 |---|---|---|---|
 | Vault location | `~/Wavewatch` on Franco's Mac (folder named with a lower-case w; macOS paths are case-insensitive by default, UNVERIFIED for this disk) | 2026-10-20 | Folder added by Franco, 2026-10-20 |
 | Vault shape | Copied from the Skiet Goed vault, which is the newest form of the Certech template | 2026-10-20 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] |
-| Claude Code configuration | Delivered in `_claude-setup/`; Franco moves it to `.claude/` | 2026-10-20 | [[runbooks/first-time-setup]] |
-| GitHub | Account `MegannonBot`; repositories `WaveWatch-Wiki` and `WaveWatch-App` not yet created | 2026-10-20 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] |
+| Claude Code configuration | Installed in `.claude/` | 2026-10-20 | [[runbooks/first-time-setup]] |
+| GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini, from prompts in `outputs/technology/` | 2026-10-20 | same |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
@@ -42,7 +42,7 @@ last_updated: 2026-10-20
 
 | # | Question | Why it matters |
 |---|---|---|
-| 1 | Run first-time setup: move `_claude-setup` to `.claude`, create the two GitHub repositories, run `tools/setup-git.sh` ([[runbooks/first-time-setup]]) | The Mini cannot clone anything until the repositories exist |
+| 1 | Finish first-time setup: install the autosave, then run `start-on-mini.sh` ([[runbooks/first-time-setup]], steps 3 and 5) | The Mini run cannot start until it has the key and the clones |
 | 2 | Rule on the six proposals: stack, tenancy, roles, sign-in, Blaze timing, identity boundary ([[specs/firebase-architecture]]) | The Mini builds on them as defaults until ruled |
 | 3 | Which organisation runs WaveWatch: the CPF, a neighbourhood watch, a separate body, or MEGANNONME as service provider? | Sets the POPIA responsible party and who signs data-sharing agreements |
 | 4 | Switch the artifact to private, then invite Hannes with Can edit | Link visitors see no data; invitees get link-level access while a link is on |
