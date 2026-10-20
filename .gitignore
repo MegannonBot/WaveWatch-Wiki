@@ -1,0 +1,14 @@
+.DS_Store
+**/.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.~lock.*#
+**/.~lock.*#
+~$*
+**/~$*
+*.tmp
+**/*.tmp
+__pycache__/
+.trash/
+.autosave/
+_to_delete/

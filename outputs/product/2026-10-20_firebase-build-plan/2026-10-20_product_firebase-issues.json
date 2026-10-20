@@ -1,0 +1,387 @@
+{
+  "milestones": [
+    {
+      "title": "M0 Foundations",
+      "description": "Repository, emulator, app shell and base map."
+    },
+    {
+      "title": "M1 Accounts and data",
+      "description": "Sign-in, organisations, security rules, typed data layer, audit, offline."
+    },
+    {
+      "title": "M2 Core logging",
+      "description": "Incidents, map, reports feed, contacts, settings. First usable build."
+    },
+    {
+      "title": "M3 Cases and analysis",
+      "description": "Cases, cameras and canvass, series matching, patterns, SAPS liaison and statistics."
+    },
+    {
+      "title": "M4 Operations and patrols",
+      "description": "Live operations, after-action, patrol planner, briefs."
+    },
+    {
+      "title": "M5 Migration and governance",
+      "description": "Artifact import, exports, retention, privacy notice, beta project."
+    },
+    {
+      "title": "M6 Server features (Blaze)",
+      "description": "Cloud Functions, AI, WhatsApp intake, public feeds, phone sign-in."
+    },
+    {
+      "title": "M7 Community",
+      "description": "Resident camera census, footage expiry countdown, street warnings."
+    }
+  ],
+  "issues": [
+    {
+      "id": "WW-01",
+      "title": "WW-01: Repository scaffold",
+      "milestone": "M0 Foundations",
+      "labels": [
+        "foundation"
+      ],
+      "body": "**Milestone:** M0 Foundations\n\nVite, React and TypeScript (strict) app with ESLint, Prettier, Vitest, Playwright, and an installable web app manifest and service worker (vite-plugin-pwa). Folder layout: `src/app`, `src/features/<module>`, `src/data`, `src/map`, `src/lib`, `rules/`, `tests/`.\n\n**Acceptance criteria**\n- [ ] `npm run dev`, `build`, `typecheck`, `lint`, `test` all succeed\n- [ ] A Lighthouse installability check passes on the built app\n- [ ] README explains every script\n- [ ] No em dashes in code or copy\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/firebase-architecture.md`\n"
+    },
+    {
+      "id": "WW-02",
+      "title": "WW-02: Firebase emulator setup",
+      "milestone": "M0 Foundations",
+      "labels": [
+        "foundation",
+        "firebase"
+      ],
+      "body": "**Milestone:** M0 Foundations\n\n`firebase.json` with Auth and Firestore emulators, project id `demo-wavewatch`, `firebase-tools` as a dev dependency, `npm run emu` script, seed script with clearly fake data only.\n\n**Acceptance criteria**\n- [ ] The app connects to the emulators when `VITE_USE_EMULATOR=1`\n- [ ] The seed script loads fake data marked `demo: true`\n- [ ] No Firebase login or real project is needed or referenced\n\n**Depends on:** WW-01\n"
+    },
+    {
+      "id": "WW-03",
+      "title": "WW-03: CI workflow, manual only",
+      "milestone": "M0 Foundations",
+      "labels": [
+        "foundation"
+      ],
+      "body": "**Milestone:** M0 Foundations\n\nGitHub Actions workflow that runs typecheck, lint, unit tests and rules tests against the emulator. Trigger `workflow_dispatch` only (private-repository minutes not checked).\n\n**Acceptance criteria**\n- [ ] Workflow file valid (`actionlint` or a dry parse)\n- [ ] Runs nothing on push\n\n**Depends on:** WW-02\n"
+    },
+    {
+      "id": "WW-04",
+      "title": "WW-04: Design tokens and app shell",
+      "milestone": "M0 Foundations",
+      "labels": [
+        "foundation",
+        "ui"
+      ],
+      "body": "**Milestone:** M0 Foundations\n\nPhone-first shell matching the artifact: bottom tabs Map, Log, Cases, Ops, Insights, More; light and dark themes from CSS tokens; the artifact's type scale and colours as the starting point.\n\n**Acceptance criteria**\n- [ ] Usable at 360 px width with no sideways scroll\n- [ ] Light and dark both pass WCAG AA contrast for text\n- [ ] Tab state survives reload\n\n**Depends on:** WW-01\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/artifact-poc.md`\n"
+    },
+    {
+      "id": "WW-05",
+      "title": "WW-05: Base map from the OSM extract",
+      "milestone": "M0 Foundations",
+      "labels": [
+        "map"
+      ],
+      "body": "**Milestone:** M0 Foundations\n\nMapLibre GL map rendered from `raw/2026-10-20_osm-jeffreys-bay-extract.json` converted at build time to GeoJSON (roads by class, coast, water, green, places, points of interest). No external tile server. OpenStreetMap attribution shown.\n\n**Acceptance criteria**\n- [ ] Map loads offline after first visit\n- [ ] Pan and zoom smooth on a mid-range phone (Chrome device emulation, 4x CPU slowdown)\n- [ ] Conversion script is tested and reproducible\n\n**Depends on:** WW-01\n\n**Spec:** `WaveWatch-Wiki/wiki/research/2026-10-20_research_osm-map-extract.md`\n"
+    },
+    {
+      "id": "WW-06",
+      "title": "WW-06: Sign-in",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "auth"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\nFirebase Authentication with email and password, and Google. Sign-out, password reset. Phone sign-in is WW-36.\n\n**Acceptance criteria**\n- [ ] Works against the Auth emulator\n- [ ] Signed-out users see only the sign-in screen\n- [ ] No personal data in URLs\n\n**Depends on:** WW-02\n\n**Spec:** `WaveWatch-Wiki/wiki/decisions/2026-10-20_decision-sign-in-methods.md`\n"
+    },
+    {
+      "id": "WW-07",
+      "title": "WW-07: Organisations, members and invites",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "auth",
+        "data"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\n`orgs/{orgId}` with `members/{uid}` (role, invitedBy, joinedAt). Coordinator creates invites (email plus role); invitee joins on sign-in. Roles coordinator, analyst, responder, viewer.\n\n**Acceptance criteria**\n- [ ] First user of a new org becomes coordinator\n- [ ] A coordinator can change roles and remove members\n- [ ] Invites expire after 14 days\n\n**Depends on:** WW-06\n\n**Spec:** `WaveWatch-Wiki/wiki/decisions/2026-10-20_decision-roles.md`\n"
+    },
+    {
+      "id": "WW-08",
+      "title": "WW-08: Security rules v1 with tests",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "security",
+        "firebase"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\nFirestore rules for the matrix in the security model: deny by default, membership check, role checks, field types, allowed values, maximum lengths. Rules unit tests with `@firebase/rules-unit-testing`.\n\n**Acceptance criteria**\n- [ ] A test per role per collection, allowed and refused\n- [ ] Cross-organisation read refused (test)\n- [ ] Responder cannot read cases (test)\n- [ ] Deletes are coordinator only (test)\n\n**Depends on:** WW-07\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/security-model.md`\n"
+    },
+    {
+      "id": "WW-09",
+      "title": "WW-09: Typed data layer",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "data"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\nZod schemas and Firestore converters for every collection in the data model; repository functions per collection; live queries as React hooks.\n\n**Acceptance criteria**\n- [ ] Every write passes schema validation before it is sent\n- [ ] Unit tests for each schema with valid and invalid examples\n- [ ] Schemas match the artifact backup shape (fixture test)\n\n**Depends on:** WW-07\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/data-model.md`\n"
+    },
+    {
+      "id": "WW-10",
+      "title": "WW-10: Audit log",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "security",
+        "data"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\nAppend-only `audit` entries (at, uid, action, path) for deletes, role changes, imports, exports and purges. Coordinator-only view.\n\n**Acceptance criteria**\n- [ ] Rules forbid update and delete on audit (test)\n- [ ] Each listed action writes one entry (test)\n\n**Depends on:** WW-08\n"
+    },
+    {
+      "id": "WW-11",
+      "title": "WW-11: Offline persistence and sync status",
+      "milestone": "M1 Accounts and data",
+      "labels": [
+        "data",
+        "ui"
+      ],
+      "body": "**Milestone:** M1 Accounts and data\n\nFirestore persistent local cache (multi-tab). A status chip: Saved, Saving, Offline (n waiting).\n\n**Acceptance criteria**\n- [ ] Log 10 incidents in airplane mode (emulated), reload, reconnect: all 10 synced once\n- [ ] Status chip reflects each state (Playwright)\n\n**Depends on:** WW-09\n"
+    },
+    {
+      "id": "WW-12",
+      "title": "WW-12: Incident log with privacy guard",
+      "milestone": "M2 Core logging",
+      "labels": [
+        "incidents"
+      ],
+      "body": "**Milestone:** M2 Core logging\n\nQuick log and full form as in the artifact: 22 types in 8 groups, time or time window, approximate flag, area, street, map pin, method, items, description, vehicle description, source, SAPS status and CAS, follow-up. Privacy guard warns on names, phone, ID and plate patterns and house numbers before save.\n\n**Acceptance criteria**\n- [ ] Quick log in under 20 seconds on a phone (manual check, recorded)\n- [ ] Guard catches the patterns from the intake test set\n- [ ] Edit history kept per incident\n\n**Depends on:** WW-09,WW-05\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/intake-and-redaction.md`\n"
+    },
+    {
+      "id": "WW-13",
+      "title": "WW-13: Map view of incidents",
+      "milestone": "M2 Core logging",
+      "labels": [
+        "map",
+        "incidents"
+      ],
+      "body": "**Milestone:** M2 Core logging\n\nPins by type colour, heat layer, filters (type group, period, area, SAPS status), replay by time, tap a pin for a summary card.\n\n**Acceptance criteria**\n- [ ] 500 fake incidents render without jank (4x CPU slowdown)\n- [ ] Filters and replay match the artifact behaviour\n\n**Depends on:** WW-12,WW-05\n"
+    },
+    {
+      "id": "WW-14",
+      "title": "WW-14: Reports feed and grading",
+      "milestone": "M2 Core logging",
+      "labels": [
+        "reports"
+      ],
+      "body": "**Milestone:** M2 Core logging\n\nFeed of raw reports with source reliability A to F and credibility 1 to 6, link to incident, case or operation, or dismiss with a reason. Manual entry and paste of a WhatsApp export with on-device redaction (no AI yet; the coordinator splits items by hand).\n\n**Acceptance criteria**\n- [ ] Parser and redaction pass the intake test set (senders, phone, ID, plates, system and media lines)\n- [ ] Linked and dismissed reports leave the feed\n\n**Depends on:** WW-09\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/intake-and-redaction.md`\n"
+    },
+    {
+      "id": "WW-15",
+      "title": "WW-15: Contacts and role-player presets",
+      "milestone": "M2 Core logging",
+      "labels": [
+        "contacts"
+      ],
+      "body": "**Milestone:** M2 Core logging\n\nContacts list (organisation, role, phone, notes) and presets used by operations.\n\n**Acceptance criteria**\n- [ ] Responders can read contacts; viewers cannot (rules test)\n\n**Depends on:** WW-09\n"
+    },
+    {
+      "id": "WW-16",
+      "title": "WW-16: Settings",
+      "milestone": "M2 Core logging",
+      "labels": [
+        "settings"
+      ],
+      "body": "**Milestone:** M2 Core logging\n\nAreas (15 suburbs default), sources with default reliability, near-repeat distance and days, retention months. Coordinator edits; others read.\n\n**Acceptance criteria**\n- [ ] Changing near-repeat settings changes alerts immediately\n- [ ] Defaults match the artifact\n\n**Depends on:** WW-09\n"
+    },
+    {
+      "id": "WW-17",
+      "title": "WW-17: Cases and series",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "cases"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nCases with subjects (descriptions only), sightings route on the map, tasks, hypotheses, evidence handover register, series links, status open, with SAPS, closed.\n\n**Acceptance criteria**\n- [ ] Sightings draw a timed route\n- [ ] Handover register captures holder, window, hash or reference, receiver and CAS\n\n**Depends on:** WW-13\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/privacy-and-evidence.md`\n"
+    },
+    {
+      "id": "WW-18",
+      "title": "WW-18: Cameras and canvass",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "cameras"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nCamera registry with direction, field of view and range drawn on the map; canvass statuses per case; footage request text generator.\n\n**Acceptance criteria**\n- [ ] Camera cones render correctly at all zoom levels\n- [ ] Canvass status per camera per case persists\n\n**Depends on:** WW-17\n"
+    },
+    {
+      "id": "WW-19",
+      "title": "WW-19: Gap streets and likely exit routes",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "cameras",
+        "analysis"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nPort `coverage` (650 m radius, camera within 45 m) and `exitRoutes` (direction from the last two sightings) from the artifact.\n\n**Acceptance criteria**\n- [ ] Unit tests reproduce the artifact results on the fixture case\n\n**Depends on:** WW-18\n"
+    },
+    {
+      "id": "WW-20",
+      "title": "WW-20: Series matching",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "analysis",
+        "cases"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nPort `matchCases` scoring (threshold 45) to suggest linked cases.\n\n**Acceptance criteria**\n- [ ] Unit tests reproduce the artifact scores on fixtures\n\n**Depends on:** WW-17\n"
+    },
+    {
+      "id": "WW-21",
+      "title": "WW-21: Patterns, near-repeats, repeat locations",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "analysis"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nTime of day and day of week charts, near-repeat alerts (default 400 m, 14 days), repeat locations, response times.\n\n**Acceptance criteria**\n- [ ] Near-repeat toast on save when applicable\n- [ ] Charts readable at 360 px\n\n**Depends on:** WW-13,WW-16\n\n**Spec:** `WaveWatch-Wiki/wiki/concepts/Near-repeat.md`\n"
+    },
+    {
+      "id": "WW-22",
+      "title": "WW-22: SAPS liaison",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "saps"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nReferral summary, follow-up list, case pack generator, monthly report.\n\n**Acceptance criteria**\n- [ ] Generated text has no names or identifying numbers (test)\n\n**Depends on:** WW-17\n"
+    },
+    {
+      "id": "WW-23",
+      "title": "WW-23: Station statistics by quarter",
+      "milestone": "M3 Cases and analysis",
+      "labels": [
+        "saps",
+        "analysis"
+      ],
+      "body": "**Milestone:** M3 Cases and analysis\n\nEnter published station statistics by South African financial-year quarter (`q-YYYY-M`) and compare with logged incidents.\n\n**Acceptance criteria**\n- [ ] Quarter labels match the artifact `quarters()` function (test)\n\n**Depends on:** WW-09\n"
+    },
+    {
+      "id": "WW-24",
+      "title": "WW-24: Live operations",
+      "milestone": "M4 Operations and patrols",
+      "labels": [
+        "ops"
+      ],
+      "body": "**Milestone:** M4 Operations and patrols\n\nOperations of six kinds with response log, timeline, search sectors drawn and cleared, last known position, sightings, live presence of viewers (Firestore listeners).\n\n**Acceptance criteria**\n- [ ] Two browsers see each other's timeline entries within 2 seconds on the emulator\n\n**Depends on:** WW-13,WW-15\n"
+    },
+    {
+      "id": "WW-25",
+      "title": "WW-25: Close, minimise and after-action",
+      "milestone": "M4 Operations and patrols",
+      "labels": [
+        "ops",
+        "privacy"
+      ],
+      "body": "**Milestone:** M4 Operations and patrols\n\nClosing an operation clears `personNote`, logs the minimisation, and generates the after-action report with no personal details.\n\n**Acceptance criteria**\n- [ ] personNote empty after close (test)\n- [ ] After-action text passes the privacy guard (test)\n\n**Depends on:** WW-24\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/privacy-and-evidence.md`\n"
+    },
+    {
+      "id": "WW-26",
+      "title": "WW-26: Patrol planner and effect check",
+      "milestone": "M4 Operations and patrols",
+      "labels": [
+        "patrols"
+      ],
+      "body": "**Milestone:** M4 Operations and patrols\n\nPort `patrolZones` (250 m grid, 10-day half-life, at most 4 zones); log patrols; compare incidents before and after.\n\n**Acceptance criteria**\n- [ ] Unit tests reproduce the artifact zones on fixtures\n\n**Depends on:** WW-21\n"
+    },
+    {
+      "id": "WW-27",
+      "title": "WW-27: Briefs from templates",
+      "milestone": "M4 Operations and patrols",
+      "labels": [
+        "briefs"
+      ],
+      "body": "**Milestone:** M4 Operations and patrols\n\nIntelligence brief and resident bulletin from templates (AI version is WW-34). Bulletin names suburbs and time bands only and warns on street names or numbers.\n\n**Acceptance criteria**\n- [ ] Bulletin warning fires on a street name (test)\n\n**Depends on:** WW-21\n"
+    },
+    {
+      "id": "WW-28",
+      "title": "WW-28: Import the artifact backup",
+      "milestone": "M5 Migration and governance",
+      "labels": [
+        "migration"
+      ],
+      "body": "**Milestone:** M5 Migration and governance\n\nImport screen for the artifact JSON (`app: wavewatch` version 2, or `jbay-cpf-desk`), skip-demo option, counts per collection, keep ids, idempotent.\n\n**Acceptance criteria**\n- [ ] Fixture backup imports with matching counts and resolved links\n- [ ] Re-run writes nothing new\n\n**Depends on:** WW-09\n\n**Spec:** `WaveWatch-Wiki/wiki/runbooks/migrate-artifact-data.md`\n"
+    },
+    {
+      "id": "WW-29",
+      "title": "WW-29: Exports",
+      "milestone": "M5 Migration and governance",
+      "labels": [
+        "governance"
+      ],
+      "body": "**Milestone:** M5 Migration and governance\n\nJSON backup of the whole organisation, CSV of incidents. Coordinator only, audited.\n\n**Acceptance criteria**\n- [ ] Export then import into a clean org round-trips (test)\n\n**Depends on:** WW-28,WW-10\n"
+    },
+    {
+      "id": "WW-30",
+      "title": "WW-30: Retention purge",
+      "milestone": "M5 Migration and governance",
+      "labels": [
+        "governance",
+        "privacy"
+      ],
+      "body": "**Milestone:** M5 Migration and governance\n\nPrompt to purge records older than the retention setting; audited.\n\n**Acceptance criteria**\n- [ ] Purge removes only records past retention (test)\n\n**Depends on:** WW-10,WW-16\n"
+    },
+    {
+      "id": "WW-31",
+      "title": "WW-31: Privacy notice and onboarding",
+      "milestone": "M5 Migration and governance",
+      "labels": [
+        "privacy"
+      ],
+      "body": "**Milestone:** M5 Migration and governance\n\nPlain-language privacy notice placeholder (text to be confirmed by an attorney), shown on first sign-in and in More.\n\n**Acceptance criteria**\n- [ ] Notice marked DRAFT until Franco approves the text\n\n**Depends on:** WW-07\n\n**Spec:** `WaveWatch-Wiki/wiki/specs/privacy-and-evidence.md`\n"
+    },
+    {
+      "id": "WW-32",
+      "title": "WW-32: Beta project (Franco only)",
+      "milestone": "M5 Migration and governance",
+      "labels": [
+        "firebase",
+        "franco"
+      ],
+      "body": "**Milestone:** M5 Migration and governance\n\nFranco creates the beta Firebase project in africa-south1 on Spark, and the Mini deploys nothing. Checklist only.\n\n**Acceptance criteria**\n- [ ] Checklist in docs, ticked by Franco\n\n**Depends on:** WW-31\n"
+    },
+    {
+      "id": "WW-33",
+      "title": "WW-33: Functions base and secrets",
+      "milestone": "M6 Server features (Blaze)",
+      "labels": [
+        "firebase",
+        "server"
+      ],
+      "body": "**Milestone:** M6 Server features (Blaze)\n\nCloud Functions 2nd gen in africa-south1, Secret Manager for the Claude key, budget alert R200 a month. Needs Blaze and Franco.\n\n**Acceptance criteria**\n- [ ] No secret in client code (grep check)\n- [ ] Budget alert set (Franco)\n\n**Depends on:** WW-32\n\n**Spec:** `WaveWatch-Wiki/wiki/decisions/2026-10-20_decision-blaze-at-m6.md`\n"
+    },
+    {
+      "id": "WW-34",
+      "title": "WW-34: AI extraction, AI briefs and Ask",
+      "milestone": "M6 Server features (Blaze)",
+      "labels": [
+        "server",
+        "ai"
+      ],
+      "body": "**Milestone:** M6 Server features (Blaze)\n\nCallable functions for message extraction (after on-device redaction), brief drafting and Ask over the organisation's data.\n\n**Acceptance criteria**\n- [ ] Extraction returns the artifact item shape\n- [ ] Rate limit per member per day\n\n**Depends on:** WW-33\n"
+    },
+    {
+      "id": "WW-35",
+      "title": "WW-35: WhatsApp intake and public feeds",
+      "milestone": "M6 Server features (Blaze)",
+      "labels": [
+        "server",
+        "intake"
+      ],
+      "body": "**Milestone:** M6 Server features (Blaze)\n\nWhatsApp Business webhook for forwarded messages into the reports feed; scheduled collector for public feeds.\n\n**Acceptance criteria**\n- [ ] Webhook verifies signatures\n- [ ] Collector runs on a schedule and dedupes\n\n**Depends on:** WW-33\n"
+    },
+    {
+      "id": "WW-36",
+      "title": "WW-36: Phone sign-in",
+      "milestone": "M6 Server features (Blaze)",
+      "labels": [
+        "auth"
+      ],
+      "body": "**Milestone:** M6 Server features (Blaze)\n\nSMS sign-in for responders.\n\n**Acceptance criteria**\n- [ ] Works on Blaze test numbers\n\n**Depends on:** WW-33\n"
+    },
+    {
+      "id": "WW-37",
+      "title": "WW-37: Community features",
+      "milestone": "M7 Community",
+      "labels": [
+        "community"
+      ],
+      "body": "**Milestone:** M7 Community\n\nResident camera census form, footage expiry countdown on cases, street warnings to residents.\n\n**Acceptance criteria**\n- [ ] Scoped after Gate 2\n\n**Depends on:** WW-29\n"
+    }
+  ]
+}
