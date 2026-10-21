@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Design direction B, Watch
+
+**Franco chose design direction B, Watch, over Claude's recommendation of C.**
+New page [[decisions/2026-10-21_decision-design-direction-watch]]. Old STATE Design run: "Three directions drawn; Franco to pick one". Needs Franco 10 cleared.
+
 ## [2026-10-21] design | Laptop build run; design run started
 
 **Franco ran the app on his laptop, decided on a design run before new features, and three design directions are ready for him to pick from.**
