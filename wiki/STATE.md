@@ -39,14 +39,14 @@ last_updated: 2026-10-21
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
 | Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
-| Design run | Design system "WaveWatch Watch" approved (https://claude.ai/artifact/NL9nPKd5FdBfVvLMiTwZwV; vault copy `outputs/product/2026-10-21_design-system-watch/`). Mini design run brief ready, not started: `outputs/technology/2026-10-21_design-watch-run/` | 2026-10-21 | [[decisions/2026-10-21_decision-design-system-watch-approved]] |
+| Design run | Design system "WaveWatch Watch" approved (https://claude.ai/artifact/NL9nPKd5FdBfVvLMiTwZwV; vault copy `outputs/product/2026-10-21_design-system-watch/`). Mini design run STARTED 2026-10-21 (Franco's word), brief: `outputs/technology/2026-10-21_design-watch-run/` | 2026-10-21 | [[decisions/2026-10-21_decision-design-system-watch-approved]] |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | Start the Mini design run with the brief in `outputs/technology/2026-10-21_design-watch-run/` | The look goes into the app on branch `design/watch` |
+| 10 | When the design run finishes: check `design/watch` on your phone in light and dark, then merge or send back | Same check as the Skiet Goed look before merge |
 | 5 | Camera networks, security companies and role players operating in Jeffreys Bay | Seeds sources, cameras and presets with real organisations |
 | 6 | Attorney view on POPIA s57 prior authorisation and s72 cross-border transfer, and on whether MEGANNONME (Pty) Ltd is the responsible party, before outside users join | Required before Gate 1 |
 | 7 | Time a quick log on a phone (WW-12, target under 20 seconds). The laptop run works (2026-10-21) | Closes WW-12 |

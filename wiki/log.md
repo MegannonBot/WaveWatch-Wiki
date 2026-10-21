@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] build | Design run started on the Mini
+
+**Franco started the Mini design run on branch `design/watch`.**
+Old STATE Design run: "Mini design run brief ready, not started". Needs Franco 10 now: check the result on his phone before merge.
+
 ## [2026-10-21] decision | Design system approved; design run brief written
 
 **Franco approved the WaveWatch Watch design system, and the brief for the Mini design run is ready.**
