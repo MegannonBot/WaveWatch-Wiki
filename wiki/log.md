@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] design | Design System artifact drafted
+
+**Direction B was recorded as the Design System artifact "WaveWatch Watch" for Franco to approve.**
+https://claude.ai/artifact/NL9nPKd5FdBfVvLMiTwZwV: tokens, brand book, Button, WatchStrip, LogRow, GradeBadge, SyncChip, PrivacyGuard and a cover. Fonts named as hosted faces until the files are bundled. New Needs Franco 10.
+
 ## [2026-10-21] decision | Design B approved
 
 **Franco approved the direction B design, team positions for responders and calling the coordinator without showing the number.**

@@ -39,13 +39,14 @@ last_updated: 2026-10-21
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
 | Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
-| Design run | Direction B, Watch, refined: 11 screens drawn with review fixes; Design of B approved, phone and computer screens; Design System artifact next | 2026-10-21 | [[decisions/2026-10-21_decision-design-b-approved]] |
+| Design run | Direction B, Watch, refined: 11 screens drawn with review fixes; Design of B approved, phone and computer screens. Design System artifact "WaveWatch Watch" drafted for approval: https://claude.ai/artifact/NL9nPKd5FdBfVvLMiTwZwV (24 colour tokens in light and dark, 9 text styles, 6 components, cover) | 2026-10-21 | [[decisions/2026-10-21_decision-design-b-approved]] |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
+| 10 | Approve the Design System artifact "WaveWatch Watch" (link in the Design run row), or say what to change | The Mini design run builds from it |
 | 5 | Camera networks, security companies and role players operating in Jeffreys Bay | Seeds sources, cameras and presets with real organisations |
 | 6 | Attorney view on POPIA s57 prior authorisation and s72 cross-border transfer, and on whether MEGANNONME (Pty) Ltd is the responsible party, before outside users join | Required before Gate 1 |
 | 7 | Time a quick log on a phone (WW-12, target under 20 seconds). The laptop run works (2026-10-21) | Closes WW-12 |
