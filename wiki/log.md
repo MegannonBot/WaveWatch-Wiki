@@ -10,6 +10,12 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] design | Laptop build run; design run started
+
+**Franco ran the app on his laptop, decided on a design run before new features, and three design directions are ready for him to pick from.**
+New page [[decisions/2026-10-21_decision-design-run-first]]; report [[reports/2026-10-21_report_design-directions]]. Brief and comparison in `outputs/product/2026-10-21_design-directions/`.
+Old STATE Needs Franco 7: "Try the build on the laptop ... and time a quick log on a phone". New rows: Laptop build, Design run, Needs Franco 10.
+
 ## [2026-10-21] decision | Hannes starts on the web app
 
 **Franco ruled that Hannes skips the artifact and gets a link to the web app when it is ready.**

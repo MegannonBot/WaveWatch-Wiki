@@ -38,14 +38,17 @@ last_updated: 2026-10-21
 | Claude Code configuration | Installed in `.claude/` | 2026-10-20 | [[runbooks/first-time-setup]] |
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
+| Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
+| Design run | Three directions drawn; Franco to pick one | 2026-10-21 | [[decisions/2026-10-21_decision-design-run-first]] |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
+| 10 | Pick a design direction: A Tide, B Watch or C Beacon (recommended: C with B's 24-hour strip). Canvas https://claude.ai/artifact/UAf7RoHQDn82UNjNBzRCSE | The refinement pass and the design system wait on it ([[reports/2026-10-21_report_design-directions]]) |
 | 5 | Camera networks, security companies and role players operating in Jeffreys Bay | Seeds sources, cameras and presets with real organisations |
 | 6 | Attorney view on POPIA s57 prior authorisation and s72 cross-border transfer, and on whether MEGANNONME (Pty) Ltd is the responsible party, before outside users join | Required before Gate 1 |
-| 7 | Try the build on the laptop (handover section 1), and time a quick log on a phone (WW-12, target under 20 seconds) | Closes WW-12 and is the first look at the real app |
+| 7 | Time a quick log on a phone (WW-12, target under 20 seconds). The laptop run works (2026-10-21) | Closes WW-12 |
 | 8 | Confirm or change the 15 run defaults in the handover, section 5 (privacy ones: verified email to join, members' emails stored, every delete audited, extra guard warnings) | The next run builds on them |
 | 9 | Merge `m0-m2` into `main`, or not yet | `main` holds only a README |
