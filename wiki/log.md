@@ -10,6 +10,12 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Hannes starts on the web app
+
+**Franco ruled that Hannes skips the artifact and gets a link to the web app when it is ready.**
+New page [[decisions/2026-10-21_decision-hannes-starts-on-web-app]], superseding [[decisions/2026-10-20_decision-hybrid-path]]. Old STATE Platform path: "Hybrid: artifact proof of concept, then a web app". Needs Franco 4 cleared.
+Pages fixed: hybrid-path (superseded), roadmap (proof of concept gate removed), Hannes, STATE.
+
 ## [2026-10-21] decision | Six architecture proposals approved; Megannon.ME runs WaveWatch
 
 **Franco approved all six architecture proposals and ruled that Megannon.ME runs WaveWatch.**

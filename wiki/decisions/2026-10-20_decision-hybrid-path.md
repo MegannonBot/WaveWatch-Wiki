@@ -5,8 +5,9 @@ title: Hybrid path: artifact proof of concept, then a web app
 summary: Prove the workflow in a Claude artifact first, then move the same data model to a web app.
 date: 2026-10-20
 decider: Franco Megannon
-status: active
-last_updated: 2026-10-20
+status: superseded
+superseded_by: hannes-starts-on-web-app
+last_updated: 2026-10-21
 ---
 
 # Hybrid path: artifact proof of concept, then a web app

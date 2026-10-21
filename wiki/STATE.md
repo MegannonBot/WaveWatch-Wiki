@@ -19,11 +19,11 @@ last_updated: 2026-10-21
 | Scope | OSINT and incident coordination: reports, incidents, cases, operations, patrols, SAPS liaison | 2026-10-20 | [[decisions/2026-10-20_decision-osint-incident-coordination]] |
 | First user | Hannes, the coordinator, alone for now; phone first | 2026-10-20 | [[decisions/2026-10-20_decision-first-user-coordinator]] |
 | Working areas | Suburbs, not SAPS sectors, for now | 2026-10-20 | [[decisions/2026-10-20_decision-suburbs-as-zones]] |
-| Platform path | Hybrid: artifact proof of concept, then a web app | 2026-10-20 | [[decisions/2026-10-20_decision-hybrid-path]] |
+| Platform path | Web app first for Hannes; the artifact is a demo and behaviour reference only | 2026-10-21 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] |
 | Operator | DECIDED: Megannon.ME (MEGANNONME (Pty) Ltd) runs WaveWatch. Responsible party status UNVERIFIED, attorney to confirm | 2026-10-21 | [[decisions/2026-10-21_decision-operator-megannon-me]] |
 | Backend for the web app | DECIDED: Firebase. Database region (`africa-south1`), hosting and secrets handling are still proposals | 2026-10-21 | [[decisions/2026-10-20_decision-firebase-backend]] |
 | Architecture | APPROVED: installable React, TypeScript and Vite web app, org-scoped data, four roles, email and Google sign-in (phone at M6), Blaze only at M6, events and descriptions never identities | 2026-10-21 | [[specs/firebase-architecture]], Franco 2026-10-21 |
-| Artifact | https://claude.ai/artifact/6m2Fk9ZfzmGqPiGpQFTttJ, version 4, sharing set to "Anyone with the link" (Franco to switch to private before inviting Hannes) | 2026-10-20 | Artifact publish result, 2026-10-20 |
+| Artifact | https://claude.ai/artifact/6m2Fk9ZfzmGqPiGpQFTttJ, version 4, sharing set to "Anyone with the link"; Hannes will not be invited | 2026-10-20 | Artifact publish result, 2026-10-20 |
 | Build spec doc | https://claude.ai/code/artifact/a22b8b8f-1017-471f-8421-5c043c1907fe (states Supabase for Phase 3; superseded on that point by the Firebase ruling) | 2026-10-20 | [[specs/product-overview]] |
 | User guide | 8-page PDF for Hannes | 2026-10-20 | `outputs/product/2026-10-20_user-guide/` |
 | Cost target | Near zero; R0 through the proof of concept | 2026-10-20 | [[decisions/2026-10-20_decision-near-zero-cost]] |
@@ -44,7 +44,6 @@ last_updated: 2026-10-21
 
 | # | Question | Why it matters |
 |---|---|---|
-| 4 | Switch the artifact to private, then invite Hannes with Can edit (recommended 2026-10-21: Hannes uses the artifact until the web app beta) | Link visitors see no data; invitees get link-level access while a link is on |
 | 5 | Camera networks, security companies and role players operating in Jeffreys Bay | Seeds sources, cameras and presets with real organisations |
 | 6 | Attorney view on POPIA s57 prior authorisation and s72 cross-border transfer, and on whether MEGANNONME (Pty) Ltd is the responsible party, before outside users join | Required before Gate 1 |
 | 7 | Try the build on the laptop (handover section 1), and time a quick log on a phone (WW-12, target under 20 seconds) | Closes WW-12 and is the first look at the real app |

@@ -26,7 +26,7 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-20_decision-firebase-backend]] | The standalone WaveWatch web app is built on Firebase. | active |
 | [[decisions/2026-10-20_decision-first-user-coordinator]] | The first user is Hannes, the safety coordinator, working alone for now and mainly on his phone. | active |
 | [[decisions/2026-10-20_decision-guide-as-pdf]] | The coordinator's user guide is delivered as a PDF. | active |
-| [[decisions/2026-10-20_decision-hybrid-path]] | Prove the workflow in a Claude artifact first, then move the same data model to a web app. | active |
+| [[decisions/2026-10-20_decision-hybrid-path]] | Prove the workflow in a Claude artifact first, then move the same data model to a web app. | superseded |
 | [[decisions/2026-10-20_decision-identity-boundary]] | WaveWatch records events and descriptions of unidentified people, never identities. | active |
 | [[decisions/2026-10-20_decision-near-zero-cost]] | WaveWatch runs at near-zero cost: R0 through the proof of concept and free tiers first in the web app. | active |
 | [[decisions/2026-10-20_decision-no-real-examples]] | Incidents Franco shared as examples are not used in demo data, specs or tests. | active |
@@ -39,6 +39,7 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-20_decision-suburbs-as-zones]] | Areas are Jeffreys Bay suburbs for now, not SAPS sector numbers. | active |
 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] | The vault lives in ~/WaveWatch, the repositories are on the MegannonBot GitHub account, and Claude Code on the Mac Mini writes the app code. | active |
 | [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | active |
+| [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] | The artifact stays a demo and behaviour reference; Hannes gets a link to the web app when it is ready. | active |
 | [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
 
@@ -99,4 +100,4 @@ last_updated: 2026-10-21
 | [[reports/2026-10-20_report_founding-session]] | What the founding session produced: the artifact proof of concept, the spec, the user guide, the vault and the Firebase plan. | active |
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 
-*51 pages.*
+*52 pages.*

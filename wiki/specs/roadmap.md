@@ -3,7 +3,7 @@ type: spec
 title: Roadmap
 summary: Phases, milestones and gates from the artifact to other communities.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Roadmap
@@ -16,7 +16,7 @@ Spend effort only after use is proven ([[decisions/2026-10-20_decision-hybrid-pa
 
 | Phase | What | Gate to leave it |
 |---|---|---|
-| Proof of concept | Artifact v4, demo for the coordinator | He uses it weekly for 4 weeks |
+| Proof of concept | Artifact v4, demo and behaviour reference; Hannes does not use it ([[decisions/2026-10-21_decision-hannes-starts-on-web-app]]) | None |
 | Web app M0 to M2 | Foundations, accounts and data, core logging and map | Emulator tests pass; Franco reviews |
 | Web app M3 to M5 | Cases, cameras, analysis, operations, patrols, migration, beta project | Gate 1: weekly use, the station has seen a case pack, attorney view on POPIA |
 | Web app M6 | Blaze: AI, WhatsApp intake, public feeds, phone sign-in | Budget alert set |
