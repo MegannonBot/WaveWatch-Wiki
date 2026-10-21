@@ -6,7 +6,7 @@ summary: WaveWatch runs at near-zero cost: R0 through the proof of concept and f
 date: 2026-10-20
 decider: Franco Megannon
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Near-zero running cost
@@ -25,7 +25,7 @@ An unfunded community project; costs must not depend on a sponsor.
 
 ## Consequences
 
-Blaze billing is proposed only at milestone M6 ([[decisions/2026-10-20_decision-blaze-at-m6]]). Cost estimates are in [[specs/firebase-architecture]].
+Blaze billing starts only at milestone M6 ([[decisions/2026-10-20_decision-blaze-at-m6]]). Cost estimates are in [[specs/firebase-architecture]].
 
 ## Alternatives considered
 

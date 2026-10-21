@@ -3,7 +3,7 @@ type: spec
 title: Product overview and modules
 summary: The twelve modules of WaveWatch, what each does, and where each stands.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Product overview and modules
@@ -33,7 +33,7 @@ One graded, linked record of every safety report in Jeffreys Bay, so the coordin
 
 ## Out of scope
 
-Identities of any kind ([[decisions/2026-10-20_decision-identity-boundary]], proposed); storing footage; dispatching emergency services.
+Identities of any kind ([[decisions/2026-10-20_decision-identity-boundary]]); storing footage; dispatching emergency services.
 
 ## Data
 

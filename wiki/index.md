@@ -3,7 +3,7 @@ type: index
 title: WaveWatch index
 summary: Generated catalogue of every page in the vault.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # WaveWatch index
@@ -21,24 +21,26 @@ last_updated: 2026-10-20
 | Page | Summary | Status |
 |---|---|---|
 | [[decisions/2026-10-20_decision-artifact-demo-build]] | The artifact proof of concept carries every Phase 1b module, to show the coordinator what is possible. | active |
-| [[decisions/2026-10-20_decision-blaze-at-m6]] | Stay on the free Spark plan until server features are needed, then switch to Blaze with a budget alert. | proposed |
+| [[decisions/2026-10-20_decision-blaze-at-m6]] | Stay on the free Spark plan until server features are needed, then switch to Blaze with a budget alert. | active |
 | [[decisions/2026-10-20_decision-feature-batch-two]] | The brief, bulletin, Ask, patrol planner, exit routes, series matching, live ops room, comments and SAPS stats were added. | active |
 | [[decisions/2026-10-20_decision-firebase-backend]] | The standalone WaveWatch web app is built on Firebase. | active |
 | [[decisions/2026-10-20_decision-first-user-coordinator]] | The first user is Hannes, the safety coordinator, working alone for now and mainly on his phone. | active |
 | [[decisions/2026-10-20_decision-guide-as-pdf]] | The coordinator's user guide is delivered as a PDF. | active |
 | [[decisions/2026-10-20_decision-hybrid-path]] | Prove the workflow in a Claude artifact first, then move the same data model to a web app. | active |
-| [[decisions/2026-10-20_decision-identity-boundary]] | WaveWatch records events and descriptions of unidentified people, never identities. | proposed |
+| [[decisions/2026-10-20_decision-identity-boundary]] | WaveWatch records events and descriptions of unidentified people, never identities. | active |
 | [[decisions/2026-10-20_decision-near-zero-cost]] | WaveWatch runs at near-zero cost: R0 through the proof of concept and free tiers first in the web app. | active |
 | [[decisions/2026-10-20_decision-no-real-examples]] | Incidents Franco shared as examples are not used in demo data, specs or tests. | active |
-| [[decisions/2026-10-20_decision-org-scoped-data]] | Every record lives under an organisation, so other communities can be added without mixing data. | proposed |
+| [[decisions/2026-10-20_decision-org-scoped-data]] | Every record lives under an organisation, so other communities can be added without mixing data. | active |
 | [[decisions/2026-10-20_decision-osint-incident-coordination]] | WaveWatch is an OSINT platform that takes reports from many sources and links them to incidents, cases and response operations. | active |
 | [[decisions/2026-10-20_decision-phase-1-modules]] | The phase 1 modules (map, incident log, smart intake, hotspots, near-repeat alerts, SAPS liaison, contacts, data governance) were approved. | active |
 | [[decisions/2026-10-20_decision-product-name-wavewatch]] | The product name is WaveWatch, not a CPF-branded name. | active |
-| [[decisions/2026-10-20_decision-roles]] | Users hold one of four roles that set what they can read and write. | proposed |
-| [[decisions/2026-10-20_decision-sign-in-methods]] | Start with email and password and Google sign-in on the free plan; add phone sign-in when billing is on. | proposed |
+| [[decisions/2026-10-20_decision-roles]] | Users hold one of four roles that set what they can read and write. | active |
+| [[decisions/2026-10-20_decision-sign-in-methods]] | Start with email and password and Google sign-in on the free plan; add phone sign-in when billing is on. | active |
 | [[decisions/2026-10-20_decision-suburbs-as-zones]] | Areas are Jeffreys Bay suburbs for now, not SAPS sector numbers. | active |
 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] | The vault lives in ~/WaveWatch, the repositories are on the MegannonBot GitHub account, and Claude Code on the Mac Mini writes the app code. | active |
-| [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | proposed |
+| [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | active |
+| [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
+| [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
 
 ## Specs
 
@@ -95,5 +97,6 @@ last_updated: 2026-10-20
 | Page | Summary | Status |
 |---|---|---|
 | [[reports/2026-10-20_report_founding-session]] | What the founding session produced: the artifact proof of concept, the spec, the user guide, the vault and the Firebase plan. | active |
+| [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 
-*48 pages.*
+*51 pages.*

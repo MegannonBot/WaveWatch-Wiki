@@ -3,7 +3,7 @@ type: concept
 title: Glossary
 summary: The product terms WaveWatch uses, with their meaning.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Glossary
@@ -32,6 +32,8 @@ last_updated: 2026-10-20
 | Case pack | The summary of a case for a SAPS detective |
 | After-action report | The summary of an operation without personal details |
 | Resident bulletin | The anonymised weekly update for the community group |
+| Quick log | The short incident form: type, place, time and an optional line |
+| Sync chip | The status in the header: Saved, Saving, or Offline with the number of changes waiting |
 | Areas | The 15 suburbs used as working zones ([[decisions/2026-10-20_decision-suburbs-as-zones]]) |
 
 Incident types (22 in 8 groups): break-ins (residential burglary, business burglary, attempted break-in or trespass); vehicle crime (theft from vehicle, vehicle theft or hijacking); violent (robbery or mugging, assault); property (theft other, cable or infrastructure theft, vandalism); suspicious (suspicious activity, LPR or CCTV vehicle alert, begging or harassment at homes); road safety (pedestrian struck, vehicle collision, cyclist or motorcyclist collision); emergencies (medical emergency, fire, missing person, water incident); other (drug-related, other).

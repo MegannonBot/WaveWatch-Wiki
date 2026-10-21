@@ -3,7 +3,7 @@ type: spec
 title: Security model
 summary: Who can read and write what in the Firebase web app, and how the rules are tested.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Security model
@@ -14,7 +14,7 @@ Least access by default for a data set that contains alleged criminal behaviour 
 
 ## In scope
 
-Proposed role matrix ([[decisions/2026-10-20_decision-roles]]):
+Role matrix ([[decisions/2026-10-20_decision-roles]], approved 2026-10-21):
 
 | Collection | coordinator | analyst | responder | viewer |
 |---|---|---|---|---|

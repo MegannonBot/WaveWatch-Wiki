@@ -3,7 +3,7 @@ type: entity
 title: Hannes
 summary: The community safety coordinator in Jeffreys Bay and WaveWatch's first user.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Hannes
@@ -24,4 +24,4 @@ The person whose weekly use decides Gate 1.
 
 ## Open questions
 
-His formal role (CPF coordinator or watch coordinator) affects who the responsible party is.
+WaveWatch is run by Megannon.ME ([[decisions/2026-10-21_decision-operator-megannon-me]]). How his coordinator role relates to the company (user, volunteer, or under an agreement) is open, attorney to confirm.

@@ -3,26 +3,26 @@ type: spec
 title: Firebase architecture
 summary: The proposed shape of the WaveWatch web app on Firebase: services, region, environments, cost and milestones.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Firebase architecture
 
 ## Purpose
 
-Carry the artifact's behaviour to a standalone web app on Firebase ([[decisions/2026-10-20_decision-firebase-backend]]). Every design choice below is **PROPOSED** until Franco rules.
+Carry the artifact's behaviour to a standalone web app on Firebase ([[decisions/2026-10-20_decision-firebase-backend]]). Rows marked proposed stay **PROPOSED** until Franco rules; rows marked approved were ruled on 2026-10-21.
 
 ## In scope
 
 | Layer | Choice | Ruling |
 |---|---|---|
-| Client | React, TypeScript, Vite; installable web app with a service worker; MapLibre GL with the OSM extract as GeoJSON | proposed ([[decisions/2026-10-20_decision-web-stack]]) |
-| Sign-in | Firebase Authentication: email and password, Google; phone at M6 | proposed ([[decisions/2026-10-20_decision-sign-in-methods]]) |
+| Client | React, TypeScript, Vite; installable web app with a service worker; MapLibre GL with the OSM extract as GeoJSON | approved ([[decisions/2026-10-20_decision-web-stack]]) |
+| Sign-in | Firebase Authentication: email and password, Google; phone at M6 | approved ([[decisions/2026-10-20_decision-sign-in-methods]]) |
 | Database | Cloud Firestore, Native mode, location `africa-south1` (Johannesburg), offline persistence on | proposed |
-| Tenancy | `orgs/{orgId}/...` | proposed ([[decisions/2026-10-20_decision-org-scoped-data]]) |
-| Roles | coordinator, analyst, responder, viewer | proposed ([[decisions/2026-10-20_decision-roles]]) |
+| Tenancy | `orgs/{orgId}/...` | approved ([[decisions/2026-10-20_decision-org-scoped-data]]) |
+| Roles | coordinator, analyst, responder, viewer | approved ([[decisions/2026-10-20_decision-roles]]) |
 | Hosting | Firebase Hosting (static files only, no personal data) | proposed |
-| Server | Cloud Functions 2nd gen in `africa-south1` from M6: AI extraction, briefs and Ask through the Claude API, WhatsApp webhook, scheduled public feeds, retention purge | proposed ([[decisions/2026-10-20_decision-blaze-at-m6]]) |
+| Server | Cloud Functions 2nd gen in `africa-south1` from M6: AI extraction, briefs and Ask through the Claude API, WhatsApp webhook, scheduled public feeds, retention purge | approved ([[decisions/2026-10-20_decision-blaze-at-m6]]) |
 | Files | None in v1. No footage or photos stored | proposed |
 | Secrets | Claude API key and WhatsApp token in Secret Manager, never in the client | proposed |
 

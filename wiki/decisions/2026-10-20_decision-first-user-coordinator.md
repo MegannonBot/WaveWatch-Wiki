@@ -6,7 +6,7 @@ summary: The first user is Hannes, the safety coordinator, working alone for now
 date: 2026-10-20
 decider: Franco Megannon
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # First user is the coordinator alone
@@ -25,7 +25,7 @@ One user keeps the proof of concept cheap and lets the workflow settle before ro
 
 ## Consequences
 
-Every screen is designed phone first. Multi-user roles are proposed for the web app only ([[decisions/2026-10-20_decision-roles]]).
+Every screen is designed phone first. Multi-user roles apply to the web app only ([[decisions/2026-10-20_decision-roles]]).
 
 ## Alternatives considered
 

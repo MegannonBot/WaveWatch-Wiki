@@ -3,7 +3,7 @@ type: spec
 title: Privacy and evidence handling
 summary: The privacy rules WaveWatch follows and how footage is handled so SAPS can use it.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Privacy and evidence handling
@@ -17,13 +17,13 @@ Keep WaveWatch lawful under POPIA and useful to SAPS ([[research/2026-10-20_rese
 | Topic | Rule | Basis |
 |---|---|---|
 | Mandate | Outputs support SAPS; no investigative or enforcement action | SAPS Act s18 if run under a CPF |
-| Criminal behaviour | Descriptions only, never identities ([[decisions/2026-10-20_decision-identity-boundary]], proposed) | POPIA s26 |
+| Criminal behaviour | Descriptions only, never identities ([[decisions/2026-10-20_decision-identity-boundary]]) | POPIA s26 |
 | Health | "Injured, transported" only | POPIA s26 |
 | Missing persons | Details only while the operation is active; removed on close | POPIA s26, minimisation |
 | Retention | Default 12 months, purge prompt | POPIA s14 |
 | Security | Invitation-only access, audit log, no data in URLs | POPIA s19 |
 | Residency | Firestore in `africa-south1` | POPIA s72 (UNVERIFIED whether it applies to the artifact store) |
-| Responsible party | The organisation that runs WaveWatch (open: STATE, Needs Franco 3) | POPIA s55 |
+| Responsible party | WaveWatch is run by MEGANNONME (Pty) Ltd ([[decisions/2026-10-21_decision-operator-megannon-me]]); whether that makes it the responsible party is attorney to confirm | UNVERIFIED (was cited as POPIA s55) |
 
 ## Evidence handling
 

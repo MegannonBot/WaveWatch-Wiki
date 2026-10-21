@@ -3,7 +3,7 @@ type: spec
 title: Data model
 summary: The collections, key fields and links shared by the artifact and the Firebase web app.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Data model
@@ -14,7 +14,7 @@ One shape for the artifact and the web app, so moving across is an import ([[dec
 
 ## In scope
 
-Web app paths start with `orgs/{orgId}/` ([[decisions/2026-10-20_decision-org-scoped-data]], proposed). Times are epoch milliseconds. Locations are `lon`, `lat` at five decimals.
+Web app paths start with `orgs/{orgId}/` ([[decisions/2026-10-20_decision-org-scoped-data]]). Times are epoch milliseconds. Locations are `lon`, `lat` at five decimals.
 
 | Collection | Key fields | Links |
 |---|---|---|

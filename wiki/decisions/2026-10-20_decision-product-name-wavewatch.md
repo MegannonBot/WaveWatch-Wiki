@@ -6,7 +6,7 @@ summary: The product name is WaveWatch, not a CPF-branded name.
 date: 2026-10-20
 decider: Franco Megannon
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # The product is called WaveWatch
@@ -21,7 +21,7 @@ Franco, 2026-10-20: "The name should be WaveWatch, not CPF."
 
 ## Rationale
 
-Keeps the product independent of any one structure; which organisation runs it is still open (STATE, Needs Franco 3).
+Keeps the product independent of any one structure; which organisation runs it was ruled on 2026-10-21 ([[decisions/2026-10-21_decision-operator-megannon-me]]).
 
 ## Consequences
 

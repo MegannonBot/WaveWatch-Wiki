@@ -3,12 +3,24 @@ type: log
 title: WaveWatch log
 summary: Append-only record of what happened, newest first.
 status: active
-last_updated: 2026-10-20
+last_updated: 2026-10-21
 ---
 
 # Log
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
+
+## [2026-10-21] decision | Six architecture proposals approved; Megannon.ME runs WaveWatch
+
+**Franco approved all six architecture proposals and ruled that Megannon.ME runs WaveWatch.**
+Approved: web stack (web app kept after a comparison with the Skiet Goed and Certech stacks), org-scoped data, four roles, sign-in methods, Blaze at M6, identity boundary. New page [[decisions/2026-10-21_decision-operator-megannon-me]].
+Old STATE values: Backend "Region, plan and stack are proposals"; "Proposed architecture ... (all PROPOSED)". Needs Franco 2 and 3 cleared; 6 now includes the responsible party question.
+Pages fixed: six decision pages, near-zero-cost, first-user-coordinator, product-name, firebase-architecture, privacy-and-evidence (responsible party basis s55 now UNVERIFIED), product-overview, data-model, security-model, Franco-Megannon, Hannes.
+
+## [2026-10-21] build | M0 to M2 run on the Mini
+
+**The first Mini run built WW-01 to WW-16 on branch `m0-m2`: 15 done, WW-12 partly done, all 487 tests passing, emulator only.**
+Old STATE Stage: "Firebase build not started". Details and open items in [[reports/2026-10-20_report_m0-m2-run]]. The session ran in auto mode and on Node 20, both different from what the brief assumed.
 
 ## [2026-10-20] setup | Mini prepared; first build run started
 
