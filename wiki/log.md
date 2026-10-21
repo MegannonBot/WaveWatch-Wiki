@@ -10,6 +10,31 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Built for Wavecrest Watch; security company list withdrawn
+
+**Franco said WaveWatch is built for Wavecrest Watch, and the security company list from a business directory was withdrawn as wrong.**
+New pages [[decisions/2026-10-21_decision-built-for-wavecrest-watch]] and [[entities/Wavecrest-Watch]]. Withdrawal grep: only [[research/2026-10-21_research_jbay-role-players]] held the list; fixed. Also found: the laptop autosave last ran at 16:09, so nothing since was pushed (the part 2 brief included).
+
+## [2026-10-21] decision | Merge plan; POPIA questions for Hannes; role players listed
+
+**Franco ruled to merge once after the phone check, said Hannes is an attorney, and asked for a public-source list of role players.**
+New pages [[decisions/2026-10-21_decision-merge-after-design-check]] and [[research/2026-10-21_research_jbay-role-players]]; question pack in `outputs/legal/2026-10-21_popia-questions-hannes/`. Hannes entity updated. Needs Franco 5, 6, 7 and 9 reworded.
+
+## [2026-10-21] decision | First build run choices confirmed; family shapes approved
+
+**Franco confirmed the M0 to M2 run's choices, ruled that @mentions are removed whole, and approved shapes for all eight incident families.**
+New pages [[decisions/2026-10-21_decision-m0-m2-run-defaults]] and [[decisions/2026-10-21_decision-family-shapes-approved]]. Part 2 brief written in `outputs/technology/2026-10-21_design-watch-run/`. Needs Franco 8 cleared; 10 now starts part 2.
+
+## [2026-10-21] decision | Design run choices
+
+**Franco ruled on three design-run choices; five new family shapes were added to the design system for his approval.**
+New page [[decisions/2026-10-21_decision-design-run-choices]]. Design system updated (tokens, README, FamilyShapes) and the vault copy refreshed. Needs Franco 8 not yet answered (his reply carried the run summary instead).
+
+## [2026-10-21] build | Design watch run, part 1
+
+**The Mini applied fonts, colours, the theme setting, the shell and the map on `design/watch`, then stopped at its usage limit.**
+Report [[reports/2026-10-21_report_design-watch-run]]. Old STATE Design run: "Mini design run STARTED 2026-10-21". One end-to-end test fails in full runs from slow emulator writes while another project loaded the Mini; the same showed on `m0-m2`.
+
 ## [2026-10-21] build | Design run started on the Mini
 
 **Franco started the Mini design run on branch `design/watch`.**

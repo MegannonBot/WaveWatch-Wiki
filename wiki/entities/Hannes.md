@@ -15,6 +15,7 @@ Safety coordinator in Jeffreys Bay and the first user ([[decisions/2026-10-20_de
 ## Key facts
 
 - First and only user for now; mainly on his phone (Franco, 2026-10-20).
+- Is an attorney; Franco asked that the POPIA questions go to him (Franco, 2026-10-21). Questions: `outputs/legal/2026-10-21_popia-questions-hannes/`.
 - User guide written for him (2026-10-20, `outputs/product/2026-10-20_user-guide/`); it covers the artifact, not the web app.
 - Will not be invited to the artifact; gets a link to the web app when it is ready (Franco, 2026-10-21, [[decisions/2026-10-21_decision-hannes-starts-on-web-app]]).
 

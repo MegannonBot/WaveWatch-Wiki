@@ -40,11 +40,16 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] | The vault lives in ~/WaveWatch, the repositories are on the MegannonBot GitHub account, and Claude Code on the Mac Mini writes the app code. | active |
 | [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | superseded |
 | [[decisions/2026-10-21_decision-b-refinement-points]] | The privacy guard is always on, the theme defaults to Match phone, the watch strip always shows 24 hours, and the list under the map is a pull-up sheet. | active |
+| [[decisions/2026-10-21_decision-built-for-wavecrest-watch]] | The first organisation WaveWatch serves is Wavecrest Watch, the community watch in Wavecrest, Jeffreys Bay. | active |
 | [[decisions/2026-10-21_decision-design-b-approved]] | The refined direction B screens, phone and computer, are approved; responders may mark their team's position inside an operation and call the coordinator without seeing the number. | active |
 | [[decisions/2026-10-21_decision-design-direction-watch]] | The web app's look is direction B, Watch: a control room log with a 24-hour watch strip, IBM Plex type and an amber accent. | active |
+| [[decisions/2026-10-21_decision-design-run-choices]] | The five unshaped incident families get their own shape and colour in the design system, the map offers 24 h to All, and "not reported to SAPS" is a filter, not a marker. | active |
 | [[decisions/2026-10-21_decision-design-run-first]] | The web app gets its own look through a design run, as for Skiet Goed, before any new features are built. | active |
 | [[decisions/2026-10-21_decision-design-system-watch-approved]] | The Design System artifact "WaveWatch Watch" is the approved design system for the web app; a Mini design run applies it on its own branch. | active |
+| [[decisions/2026-10-21_decision-family-shapes-approved]] | Robbery and assault are a diamond, theft and damage a hexagon, road safety a wide bar, emergencies a plus and other a pentagon, each with its own colour token. | active |
 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] | The artifact stays a demo and behaviour reference; Hannes gets a link to the web app when it is ready. | active |
+| [[decisions/2026-10-21_decision-m0-m2-run-defaults]] | Franco confirmed choices 7 to 19 and 21 from the M0 to M2 run, and ruled that a pasted @mention is removed whole instead of cut to two words. | active |
+| [[decisions/2026-10-21_decision-merge-after-design-check]] | m0-m2 is not merged on its own; design/watch, which contains it, is merged into main once Franco has checked it on his phone. | active |
 | [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
 | [[decisions/2026-10-21_decision-web-stack-offline-not-required]] | The web stack stays as approved, but working offline is no longer a requirement; the offline saving already built stays and nothing more is designed or built for it. | active |
@@ -70,6 +75,7 @@ last_updated: 2026-10-21
 | [[entities/Hannes]] | The community safety coordinator in Jeffreys Bay and WaveWatch's first user. | active |
 | [[entities/Information-Regulator]] | The South African regulator for POPIA. | active |
 | [[entities/SAPS-Jeffreys-Bay]] | The police station WaveWatch supports. | active |
+| [[entities/Wavecrest-Watch]] | The community watch in Wavecrest, Jeffreys Bay, that WaveWatch is built for. | active |
 
 ## Concepts
 
@@ -89,6 +95,7 @@ last_updated: 2026-10-21
 | [[research/2026-10-20_research_jbay-context]] | Published facts about police resourcing and watch structures in Jeffreys Bay. | active |
 | [[research/2026-10-20_research_osm-map-extract]] | How the street map data was obtained and what it contains. | active |
 | [[research/2026-10-20_research_popia-and-evidence]] | The legal points WaveWatch relies on: CPF objects, special personal information, and the weight of electronic evidence. | active |
+| [[research/2026-10-21_research_jbay-role-players]] | A starting list of organisations in Jeffreys Bay community safety (municipal camera network, watches, security companies) for Franco to correct. | draft |
 
 ## Runbooks
 
@@ -106,5 +113,6 @@ last_updated: 2026-10-21
 | [[reports/2026-10-20_report_founding-session]] | What the founding session produced: the artifact proof of concept, the spec, the user guide, the vault and the Firebase plan. | active |
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
+| [[reports/2026-10-21_report_design-watch-run]] | The first part of the WaveWatch Watch design run on branch design/watch: fonts, tokens, theme setting, shell and map done; the rest not done. | active |
 
-*59 pages.*
+*67 pages.*
