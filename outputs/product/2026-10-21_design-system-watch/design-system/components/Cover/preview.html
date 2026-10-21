@@ -1,0 +1,32 @@
+<!-- @dsCard height=288 -->
+<style>
+  .cv{position:relative;width:960px;height:288px;background:var(--bg);overflow:hidden;font-family:var(--font-sans);}
+  .cv svg{position:absolute;left:0;top:0;}
+  .ink{fill:var(--ink);} .acc{fill:var(--accent);} .tint{fill:var(--ink-muted);} .bk{fill:var(--family-breakin);} .su{fill:var(--family-suspicious);} .ve{fill:var(--family-vehicle);}
+  .cell{fill:none;stroke:var(--control-border);stroke-width:1;} .now{fill:var(--accent);}
+  .blk{rx:var(--radius-lg);}
+  .name{position:absolute;left:40px;bottom:64px;margin:0;max-width:440px;font-family:var(--font-sans);font-weight:600;font-size:80px;line-height:.95;color:var(--ink);}
+  .tag{position:absolute;left:40px;bottom:32px;margin:0;max-width:440px;font-size:14px;line-height:20px;color:var(--ink-muted);}
+</style>
+<div class="cv">
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <!-- blocks: ink 256x288 (slab bleeding top, right, bottom), accent 208x136, ink-muted 208x136 (surface-2 vanished in dark), family marks 24x40 -->
+    <!-- arrangement: one tall ink slab at the right with two stacked satellites left of it, all right of x=480 -->
+    <!-- pattern: the watch strip, 24 hour cells with three family marks and the Now line, chosen because the README calls the strip the signature and the time column a logbook -->
+    <!-- scales: gaps space-4 (16px), cells 9px pitch, corners radius-lg (6px) on satellites, slab square -->
+    <rect class="acc blk" x="480" y="0" width="208" height="136"></rect>
+    <rect class="tint blk" x="480" y="152" width="208" height="136"></rect>
+    <rect class="ink" x="704" y="0" width="256" height="288"></rect>
+    <g transform="translate(720,112)">
+      <rect class="cell" x="0" y="0" width="9" height="40"></rect><rect class="cell" x="9" y="0" width="9" height="40"></rect><rect class="cell" x="18" y="0" width="9" height="40"></rect><rect class="cell" x="27" y="0" width="9" height="40"></rect><rect class="cell" x="36" y="0" width="9" height="40"></rect><rect class="cell" x="45" y="0" width="9" height="40"></rect><rect class="cell" x="54" y="0" width="9" height="40"></rect><rect class="cell" x="63" y="0" width="9" height="40"></rect><rect class="cell" x="72" y="0" width="9" height="40"></rect><rect class="cell" x="81" y="0" width="9" height="40"></rect><rect class="cell" x="90" y="0" width="9" height="40"></rect><rect class="cell" x="99" y="0" width="9" height="40"></rect><rect class="cell" x="108" y="0" width="9" height="40"></rect><rect class="cell" x="117" y="0" width="9" height="40"></rect><rect class="cell" x="126" y="0" width="9" height="40"></rect><rect class="cell" x="135" y="0" width="9" height="40"></rect><rect class="cell" x="144" y="0" width="9" height="40"></rect><rect class="cell" x="153" y="0" width="9" height="40"></rect><rect class="cell" x="162" y="0" width="9" height="40"></rect><rect class="cell" x="171" y="0" width="9" height="40"></rect><rect class="cell" x="180" y="0" width="9" height="40"></rect><rect class="cell" x="189" y="0" width="9" height="40"></rect><rect class="cell" x="198" y="0" width="9" height="40"></rect><rect class="cell" x="207" y="0" width="9" height="40"></rect>
+      <rect class="bk" x="18" y="8" width="9" height="24"></rect>
+      <rect class="su" x="99" y="8" width="9" height="24" rx="4.5"></rect>
+      <path class="ve" d="M157.5 8 L162 32 L153 32 Z"></path>
+      <rect class="su" x="180" y="8" width="9" height="24" rx="4.5"></rect>
+      <rect class="now" x="210" y="-16" width="3" height="72"></rect>
+    </g>
+  </svg>
+  <h1 class="name">WaveWatch Watch</h1>
+  <p class="tag">What happened, where and when, by day and by night.</p>
+</div>
+<script></script>
