@@ -22,7 +22,7 @@ last_updated: 2026-10-21
 | Platform path | Web app first for Hannes; the artifact is a demo and behaviour reference only | 2026-10-21 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] |
 | Operator | DECIDED: Megannon.ME (MEGANNONME (Pty) Ltd) runs WaveWatch. Responsible party status UNVERIFIED, attorney to confirm | 2026-10-21 | [[decisions/2026-10-21_decision-operator-megannon-me]] |
 | Backend for the web app | DECIDED: Firebase. Database region (`africa-south1`), hosting and secrets handling are still proposals | 2026-10-21 | [[decisions/2026-10-20_decision-firebase-backend]] |
-| Architecture | APPROVED: installable React, TypeScript and Vite web app, org-scoped data, four roles, email and Google sign-in (phone at M6), Blaze only at M6, events and descriptions never identities | 2026-10-21 | [[specs/firebase-architecture]], Franco 2026-10-21 |
+| Architecture | APPROVED: installable React, TypeScript and Vite web app (offline not required), org-scoped data, four roles, email and Google sign-in (phone at M6), Blaze only at M6, events and descriptions never identities | 2026-10-21 | [[specs/firebase-architecture]], [[decisions/2026-10-21_decision-web-stack-offline-not-required]] |
 | Artifact | https://claude.ai/artifact/6m2Fk9ZfzmGqPiGpQFTttJ, version 4, sharing set to "Anyone with the link"; Hannes will not be invited | 2026-10-20 | Artifact publish result, 2026-10-20 |
 | Build spec doc | https://claude.ai/code/artifact/a22b8b8f-1017-471f-8421-5c043c1907fe (states Supabase for Phase 3; superseded on that point by the Firebase ruling) | 2026-10-20 | [[specs/product-overview]] |
 | User guide | 8-page PDF for Hannes | 2026-10-20 | `outputs/product/2026-10-20_user-guide/` |

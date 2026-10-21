@@ -38,12 +38,13 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-20_decision-sign-in-methods]] | Start with email and password and Google sign-in on the free plan; add phone sign-in when billing is on. | active |
 | [[decisions/2026-10-20_decision-suburbs-as-zones]] | Areas are Jeffreys Bay suburbs for now, not SAPS sector numbers. | active |
 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] | The vault lives in ~/WaveWatch, the repositories are on the MegannonBot GitHub account, and Claude Code on the Mac Mini writes the app code. | active |
-| [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | active |
+| [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | superseded |
 | [[decisions/2026-10-21_decision-design-direction-watch]] | The web app's look is direction B, Watch: a control room log with a 24-hour watch strip, IBM Plex type and an amber accent. | active |
 | [[decisions/2026-10-21_decision-design-run-first]] | The web app gets its own look through a design run, as for Skiet Goed, before any new features are built. | active |
 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] | The artifact stays a demo and behaviour reference; Hannes gets a link to the web app when it is ready. | active |
 | [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
+| [[decisions/2026-10-21_decision-web-stack-offline-not-required]] | The web stack stays as approved, but working offline is no longer a requirement; the offline saving already built stays and nothing more is designed or built for it. | active |
 
 ## Specs
 
@@ -103,4 +104,4 @@ last_updated: 2026-10-21
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 
-*55 pages.*
+*56 pages.*

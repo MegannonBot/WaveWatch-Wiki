@@ -16,7 +16,7 @@ Carry the artifact's behaviour to a standalone web app on Firebase ([[decisions/
 
 | Layer | Choice | Ruling |
 |---|---|---|
-| Client | React, TypeScript, Vite; installable web app with a service worker; MapLibre GL with the OSM extract as GeoJSON | approved ([[decisions/2026-10-20_decision-web-stack]]) |
+| Client | React, TypeScript, Vite; installable web app with a service worker (offline not required); MapLibre GL with the OSM extract as GeoJSON | approved ([[decisions/2026-10-21_decision-web-stack-offline-not-required]]) |
 | Sign-in | Firebase Authentication: email and password, Google; phone at M6 | approved ([[decisions/2026-10-20_decision-sign-in-methods]]) |
 | Database | Cloud Firestore, Native mode, location `africa-south1` (Johannesburg), offline persistence on | proposed |
 | Tenancy | `orgs/{orgId}/...` | approved ([[decisions/2026-10-20_decision-org-scoped-data]]) |
@@ -54,7 +54,6 @@ Native store apps; Realtime Database; Cloud Storage; any server outside South Af
 
 - Every collection read and write goes through typed converters with schema validation.
 - Security rules deny by default and have a test per role and per collection.
-- The app works in airplane mode for logging and syncs on reconnect.
 - Lighthouse installability passes.
 
 ## Open questions

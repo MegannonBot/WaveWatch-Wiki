@@ -8,7 +8,7 @@ Give the web app its own look before M3 and M4 are built. Process as for Skiet G
 
 ## Rules every direction follows
 
-1. Free resources only: open fonts bundled with the app (no Google Fonts download, so it works offline), open icons, OpenStreetMap data.
+1. Free resources only: open fonts bundled with the app (no Google Fonts download at run time), open icons, OpenStreetMap data.
 2. Phone first at 390 px; must also work on a laptop screen for the control room.
 3. Light and dark, both designed. Dark is used at night, not an afterthought.
 4. Readable outdoors and at a glance: text meets WCAG AA contrast; status never shown by colour alone.

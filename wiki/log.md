@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Offline is not a requirement
+
+**Franco ruled that working offline is not a requirement; the offline saving already built stays.**
+New page [[decisions/2026-10-21_decision-web-stack-offline-not-required]], superseding [[decisions/2026-10-20_decision-web-stack]]. Airplane-mode criterion removed from [[specs/firebase-architecture]]. STATE Architecture row now says offline not required.
+
 ## [2026-10-21] decision | Design direction B, Watch
 
 **Franco chose design direction B, Watch, over Claude's recommendation of C.**

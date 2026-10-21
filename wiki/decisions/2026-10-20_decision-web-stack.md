@@ -5,7 +5,8 @@ title: React, TypeScript and Vite installable web app with the Firebase emulator
 summary: Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator.
 date: 2026-10-21
 decider: Franco Megannon
-status: active
+status: superseded
+superseded_by: web-stack-offline-not-required
 last_updated: 2026-10-21
 ---
 
