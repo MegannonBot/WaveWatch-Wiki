@@ -39,13 +39,14 @@ last_updated: 2026-10-21
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
 | Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
-| Design run | Direction B, Watch, chosen; refinement pass next | 2026-10-21 | [[decisions/2026-10-21_decision-design-direction-watch]] |
+| Design run | Direction B, Watch, refined: 11 screens drawn with review fixes; 4 open points for Franco, then the Design System artifact | 2026-10-21 | [[decisions/2026-10-21_decision-design-direction-watch]], `outputs/product/2026-10-21_design-directions/2026-10-21_product_b-watch-review.md` |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
+| 10 | Rule on the 4 open points from the B refinement (guard always on, theme default, 24-hour strip, map sheet), listed at the end of `outputs/product/2026-10-21_design-directions/2026-10-21_product_b-watch-review.md` | The Design System artifact waits on them |
 | 5 | Camera networks, security companies and role players operating in Jeffreys Bay | Seeds sources, cameras and presets with real organisations |
 | 6 | Attorney view on POPIA s57 prior authorisation and s72 cross-border transfer, and on whether MEGANNONME (Pty) Ltd is the responsible party, before outside users join | Required before Gate 1 |
 | 7 | Time a quick log on a phone (WW-12, target under 20 seconds). The laptop run works (2026-10-21) | Closes WW-12 |

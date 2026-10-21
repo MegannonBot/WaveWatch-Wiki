@@ -10,6 +10,12 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] design | Direction B refined
+
+**Direction B was reviewed with the design critique, accessibility and copy skills and redrawn as 11 screens; four open points wait for Franco.**
+Review and open points: `outputs/product/2026-10-21_design-directions/2026-10-21_product_b-watch-review.md`. Main fixes: control borders to 3:1, visible focus, map list as a sheet, a way to change the time in quick log, mono only for times and grades.
+Old STATE Design run: "Direction B, Watch, chosen; refinement pass next". New Needs Franco 10.
+
 ## [2026-10-21] decision | Offline is not a requirement
 
 **Franco ruled that working offline is not a requirement; the offline saving already built stays.**

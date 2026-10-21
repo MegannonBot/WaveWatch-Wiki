@@ -39,3 +39,14 @@ All text pairs: pass (see the comparison file). Shape colours on the strip and m
 | Empty feed | (none) | No new reports. Reports from WhatsApp, control rooms and residents appear here. Paste WhatsApp messages to add some. |
 | Map loading | (none) | Loading the last 24 hours |
 | Sign-in error | (none) | That email and password do not match. Check both and try again, or ask your coordinator for a new invite. |
+
+## Refinement drawn (canvas row "B Watch, refined", 11 screens)
+
+Map light and dark, quick log, full incident form, incident detail, reports feed dark, settings dark, sign-in, sign-in error, empty reports feed, map loading. All review fixes above applied. Offline states removed (offline is not a requirement). Near-repeat on the incident detail uses the vault default, 400 m and 14 days (vault page concepts/Near-repeat). New colour pairs measured: error text 7.97:1, guard text 8.08:1, dark muted text 8.22:1.
+
+## Open points for Franco (Claude's proposals)
+
+1. The privacy guard is always on and cannot be switched off in settings.
+2. Theme setting offers Light, Dark and Match phone; Match phone is the default.
+3. The watch strip always shows the last 24 hours, whatever range the map shows.
+4. The list under the map is a sheet that shows one row and pulls up for the rest.
