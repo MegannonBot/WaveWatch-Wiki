@@ -39,6 +39,7 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-20_decision-suburbs-as-zones]] | Areas are Jeffreys Bay suburbs for now, not SAPS sector numbers. | active |
 | [[decisions/2026-10-20_decision-vault-repos-and-builder]] | The vault lives in ~/WaveWatch, the repositories are on the MegannonBot GitHub account, and Claude Code on the Mac Mini writes the app code. | active |
 | [[decisions/2026-10-20_decision-web-stack]] | Build the web app with React, TypeScript and Vite as an installable web app, developed against the Firebase emulator. | superseded |
+| [[decisions/2026-10-21_decision-b-refinement-points]] | The privacy guard is always on, the theme defaults to Match phone, the watch strip always shows 24 hours, and the list under the map is a pull-up sheet. | active |
 | [[decisions/2026-10-21_decision-design-direction-watch]] | The web app's look is direction B, Watch: a control room log with a 24-hour watch strip, IBM Plex type and an amber accent. | active |
 | [[decisions/2026-10-21_decision-design-run-first]] | The web app gets its own look through a design run, as for Skiet Goed, before any new features are built. | active |
 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] | The artifact stays a demo and behaviour reference; Hannes gets a link to the web app when it is ready. | active |
@@ -104,4 +105,4 @@ last_updated: 2026-10-21
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 
-*56 pages.*
+*57 pages.*

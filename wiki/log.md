@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | B refinement points approved
+
+**Franco approved the four open points from the B refinement ("That looks good").**
+New page [[decisions/2026-10-21_decision-b-refinement-points]]. Needs Franco 10 cleared. He then asked how the operator screens would look.
+
 ## [2026-10-21] design | Direction B refined
 
 **Direction B was reviewed with the design critique, accessibility and copy skills and redrawn as 11 screens; four open points wait for Franco.**
