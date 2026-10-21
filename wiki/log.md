@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] design | Operator screens on a computer
+
+**Three computer screens were drawn in direction B for the control room: the coordinator's overview, a live operation, and a security company's responder view.**
+On the canvas, row "Operator screens in B"; notes and 2 new open points at the end of `outputs/product/2026-10-21_design-directions/2026-10-21_product_b-watch-review.md`.
+
 ## [2026-10-21] decision | B refinement points approved
 
 **Franco approved the four open points from the B refinement ("That looks good").**

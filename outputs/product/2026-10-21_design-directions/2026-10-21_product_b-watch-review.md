@@ -50,3 +50,13 @@ Map light and dark, quick log, full incident form, incident detail, reports feed
 2. Theme setting offers Light, Dark and Match phone; Match phone is the default.
 3. The watch strip always shows the last 24 hours, whatever range the map shows.
 4. The list under the map is a sheet that shows one row and pulls up for the rest.
+
+## Operator screens on a computer (canvas row "Operator screens in B")
+
+Drawn at 1440 by 900 after Franco asked how the operator screens would look on a computer screen: the coordinator's control room overview (dark), a live missing person search with sectors, response log and timeline (dark), and a security company control room as a responder (light). One phone operations list (light) was drawn before the computer screens were asked for. All text pairs measured pass AA (lowest 6.06:1). Demo content only.
+
+Open points these screens raise (Claude's proposals, not yet ruled):
+
+1. Responders can mark their team's position on the operation map, visible only inside that operation.
+2. "Call the coordinator" starts a phone call from the screen without showing the number.
+3. The missing person's description shows only while the operation is active (already in the privacy spec; drawn to match).
