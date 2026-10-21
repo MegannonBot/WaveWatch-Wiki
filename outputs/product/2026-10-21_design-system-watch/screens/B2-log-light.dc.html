@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Watch refined quick log, light</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8A5300}a:hover{color:#0E141B}
+button,input,textarea,select{font:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F4F6; color: #0E141B; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column;">
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E3E6EA; padding: 8px 16px; display: flex; align-items: center; gap: 10px; height: 60px; box-sizing: border-box;">
+    <button aria-label="Back" style="width: 44px; height: 44px; border: 1px solid #7A8594; border-radius: 6px; background: #FFFFFF; color: #0E141B; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <h1 style="margin: 0; font-size: 20px; font-weight: 600;">Quick log</h1>
+  </header>
+  <div style="flex-grow: 1; overflow: hidden; padding: 14px 16px; display: flex; flex-direction: column; gap: 14px;">
+    <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px;">
+      <legend style="font-size: 14px; font-weight: 600; padding: 0 0 6px;">What happened</legend>
+      <div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #7A8594; border-radius: 6px;">
+        <button style="display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: center; min-height: 48px; padding: 0 12px; background: transparent; border: 0; border-bottom: 1px solid #E3E6EA; color: #0E141B; font-size: 16px; text-align: left;"><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" fill="#B3261E"></rect></svg>Burglary, home<span style="font-size: 13px; color: #4B5765;"><span style="font-family: 'IBM Plex Mono', monospace;">9</span> this month</span></button>
+        <button aria-pressed="true" style="display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: center; min-height: 48px; padding: 0 12px; background: #FFF1DC; border: 2px solid #8A5300; border-radius: 4px; color: #0E141B; font-size: 16px; font-weight: 600; text-align: left;"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#1F5FA8"></circle></svg>Suspicious activity<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A5300" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></button>
+        <button style="display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: center; min-height: 48px; padding: 0 12px; background: transparent; border: 0; border-bottom: 1px solid #E3E6EA; color: #0E141B; font-size: 16px; text-align: left;"><svg width="12" height="12" aria-hidden="true"><path d="M6 0 L12 12 L0 12 Z" fill="#6B4FA0"></path></svg>Theft from vehicle<span style="font-size: 13px; color: #4B5765;"><span style="font-family: 'IBM Plex Mono', monospace;">5</span> this month</span></button>
+        <button style="display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: center; min-height: 48px; padding: 0 12px; background: transparent; border: 0; color: #8A5300; font-size: 16px; font-weight: 600; text-align: left;"><span></span>All 22 types<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+      </div>
+    </fieldset>
+    <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px;">
+      <legend style="font-size: 14px; font-weight: 600; padding: 0 0 6px;">Where and when</legend>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+        <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #4B5765;">Area
+          <select style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; color: #0E141B; background: #FFFFFF;"><option>Wavecrest</option></select>
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #4B5765;">Street or landmark
+          <input value="Beach path" style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; color: #0E141B; background: #FFFFFF;">
+        </label>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #7A8594; border-radius: 6px; padding: 4px 4px 4px 12px;">
+        <span style="font-size: 16px;">When <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600;">Now, 20:56</span></span>
+        <button style="min-height: 44px; padding: 0 14px; background: transparent; color: #8A5300; border: 0; font-size: 15px; font-weight: 600;">Change</button>
+      </div>
+    </fieldset>
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <label for="b2-seen" style="font-size: 14px; font-weight: 600;">What was seen <span style="font-weight: 400; color: #4B5765;">(optional)</span></label>
+      <textarea id="b2-seen" rows="3" aria-describedby="b2-guard" style="border: 2px solid #8A5300; border-radius: 6px; padding: 10px 12px; font-size: 16px; color: #0E141B; background: #FFFFFF; resize: none; outline: 3px solid #8A5300; outline-offset: 2px;">Two people in dark hoodies checking gates, one phoned 0XX XXX XXXX, walked towards the beach.</textarea>
+      <div id="b2-guard" role="alert" style="display: flex; flex-direction: column; gap: 8px; border: 1px solid #8A5300; background: #FFF1DC; color: #6B3F00; border-radius: 6px; padding: 10px 12px; font-size: 15px;">
+        <span style="display: flex; gap: 8px; align-items: center; font-weight: 600;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2z M12 10v5 M12 18h.01"></path></svg>This looks like a phone number</span>
+        <span>Describe what people did and wore. Never identify them.</span>
+        <div style="display: flex; gap: 8px;">
+          <button style="min-height: 44px; padding: 0 14px; background: #6B3F00; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 15px; font-weight: 600;">Remove number</button>
+          <button style="min-height: 44px; padding: 0 14px; background: transparent; color: #6B3F00; border: 1px solid #6B3F00; border-radius: 6px; font-size: 15px;">Keep as typed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="background: #FFFFFF; border-top: 1px solid #E3E6EA; padding: 10px 16px; display: flex; gap: 10px; align-items: center;">
+    <a href="#" style="font-size: 15px; font-weight: 500; padding: 12px 0;">Full form</a>
+    <button style="margin-left: auto; min-height: 50px; padding: 0 16px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 16px;">Cancel</button>
+    <button style="min-height: 50px; padding: 0 20px; background: #8A5300; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 16px; font-weight: 600;">Save incident</button>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -43,6 +43,7 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-21_decision-design-b-approved]] | The refined direction B screens, phone and computer, are approved; responders may mark their team's position inside an operation and call the coordinator without seeing the number. | active |
 | [[decisions/2026-10-21_decision-design-direction-watch]] | The web app's look is direction B, Watch: a control room log with a 24-hour watch strip, IBM Plex type and an amber accent. | active |
 | [[decisions/2026-10-21_decision-design-run-first]] | The web app gets its own look through a design run, as for Skiet Goed, before any new features are built. | active |
+| [[decisions/2026-10-21_decision-design-system-watch-approved]] | The Design System artifact "WaveWatch Watch" is the approved design system for the web app; a Mini design run applies it on its own branch. | active |
 | [[decisions/2026-10-21_decision-hannes-starts-on-web-app]] | The artifact stays a demo and behaviour reference; Hannes gets a link to the web app when it is ready. | active |
 | [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
@@ -106,4 +107,4 @@ last_updated: 2026-10-21
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 
-*58 pages.*
+*59 pages.*

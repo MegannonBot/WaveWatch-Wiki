@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Watch refined full incident form, light</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8A5300}a:hover{color:#0E141B}
+button,input,textarea,select{font:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F4F6; color: #0E141B; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column;">
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E3E6EA; padding: 8px 16px; display: flex; align-items: center; gap: 10px; height: 60px; box-sizing: border-box;">
+    <button aria-label="Back" style="width: 44px; height: 44px; border: 1px solid #7A8594; border-radius: 6px; background: #FFFFFF; color: #0E141B; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <h1 style="margin: 0; font-size: 20px; font-weight: 600;">New incident</h1>
+    <span style="margin-left: auto; font-size: 14px; color: #4B5765;">Full form</span>
+  </header>
+  <div style="flex-grow: 1; overflow: hidden; padding: 14px 16px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+      <label style="grid-column: 1 / 3; display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600;">Type
+        <select style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; font-weight: 400; color: #0E141B; background: #FFFFFF;"><option>Burglary, home</option></select>
+      </label>
+      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600;">Area
+        <select style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; font-weight: 400; color: #0E141B; background: #FFFFFF;"><option>Noorsekloof</option></select>
+      </label>
+      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600;">When
+        <input value="21 Oct 2026, 02:10" style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: #0E141B; background: #FFFFFF;">
+      </label>
+      <label style="grid-column: 1 / 3; display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600;">Street or landmark <span style="font-weight: 400; color: #4B5765;">No house numbers</span>
+        <input value="Dolphin Street, near the park" style="height: 48px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; font-weight: 400; color: #0E141B; background: #FFFFFF;">
+      </label>
+    </div>
+    <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px;">
+      <legend style="font-size: 14px; font-weight: 600; padding: 0 0 6px;">How they got in</legend>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <button aria-pressed="true" style="min-height: 44px; padding: 0 12px; background: #0E141B; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 15px; font-weight: 600;">Forced window</button>
+        <button style="min-height: 44px; padding: 0 12px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 15px;">Forced door</button>
+        <button style="min-height: 44px; padding: 0 12px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 15px;">Wall or fence climbed</button>
+        <button style="min-height: 44px; padding: 0 12px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 15px;">Alarm bypassed</button>
+        <button style="min-height: 44px; padding: 0 12px; background: transparent; color: #8A5300; border: 0; font-size: 15px; font-weight: 600;">More</button>
+      </div>
+    </fieldset>
+    <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px;">
+      <legend style="font-size: 14px; font-weight: 600; padding: 0 0 6px;">Reported to SAPS</legend>
+      <div role="radiogroup" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid #7A8594; border-radius: 6px; background: #FFFFFF;">
+        <button role="radio" aria-checked="false" style="min-height: 48px; border: 0; background: transparent; color: #0E141B; font-size: 15px;">Not yet</button>
+        <button role="radio" aria-checked="false" style="min-height: 48px; border: 0; border-left: 1px solid #7A8594; background: transparent; color: #0E141B; font-size: 15px;">No CAS</button>
+        <button role="radio" aria-checked="true" style="min-height: 48px; border: 0; border-left: 1px solid #7A8594; background: #0E141B; color: #FFFFFF; font-size: 15px; font-weight: 600; border-radius: 0 5px 5px 0;">CAS opened</button>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #4B5765;">Add the CAS number on the incident after saving.</p>
+    </fieldset>
+    <fieldset style="margin: 0; padding: 12px; border: 1px solid #7A8594; border-radius: 6px; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px;">
+      <legend style="font-size: 14px; font-weight: 600; padding: 0 6px;">People seen <span style="font-weight: 400; color: #4B5765;">descriptions only</span></legend>
+      <div style="display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px;">
+        <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #4B5765;">How many
+          <input value="2" style="height: 44px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-family: 'IBM Plex Mono', monospace; font-size: 16px; color: #0E141B;">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #4B5765;">Clothing and build
+          <input value="Dark hoodies, one tall and thin" style="height: 44px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; color: #0E141B;">
+        </label>
+      </div>
+      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #4B5765;">Direction they left
+        <input value="Towards the beach on foot" style="height: 44px; border: 1px solid #7A8594; border-radius: 6px; padding: 0 10px; font-size: 16px; color: #0E141B;">
+      </label>
+    </fieldset>
+  </div>
+  <footer style="background: #FFFFFF; border-top: 1px solid #E3E6EA; padding: 10px 16px; display: flex; gap: 10px; align-items: center;">
+    <button style="margin-left: auto; min-height: 50px; padding: 0 16px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 16px;">Cancel</button>
+    <button style=" min-height: 50px; padding: 0 20px; background: #8A5300; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 16px; font-weight: 600;">Save incident</button>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

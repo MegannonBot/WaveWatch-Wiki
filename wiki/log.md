@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Design system approved; design run brief written
+
+**Franco approved the WaveWatch Watch design system, and the brief for the Mini design run is ready.**
+New page [[decisions/2026-10-21_decision-design-system-watch-approved]]. Vault copy of the design system and the 15 screen mock-ups: `outputs/product/2026-10-21_design-system-watch/`. Brief: `outputs/technology/2026-10-21_design-watch-run/`. Needs Franco 10 now: start that run.
+
 ## [2026-10-21] design | Design System artifact drafted
 
 **Direction B was recorded as the Design System artifact "WaveWatch Watch" for Franco to approve.**

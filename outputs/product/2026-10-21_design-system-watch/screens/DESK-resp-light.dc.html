@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Responder control room, light</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F4F6}
+a{color:#8A5300}a:hover{color:#0E141B}
+button,input,textarea{font:inherit}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F3F4F6; color: #0E141B; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column;">
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E3E6EA; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; min-height: 60px;">
+    <div style="display: flex; align-items: baseline; gap: 10px;"><span style="font-weight: 600; font-size: 20px;">WaveWatch</span><span style="font-size: 14px; color: #4B5765;">Jeffreys Bay</span></div>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 4px;">
+      <a href="#" aria-current="page" style="display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; color: #0E141B; font-weight: 600; text-decoration: none; box-shadow: inset 0 -3px 0 #8A5300;">My operations <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; background: #FDECEA; color: #8C1D18; border-radius: 3px; padding: 0 5px;">1</span></a>
+      <a href="#" style="display: flex; align-items: center; min-height: 44px; padding: 0 14px; color: #4B5765; text-decoration: none;">Send a report</a>
+    </nav>
+    <div style="margin-left: auto; display: flex; align-items: center; gap: 14px;">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 600;">20:56</span>
+      <span style="font-size: 14px; color: #4B5765;">Responder · Security company A, control room</span>
+    </div>
+  </header>
+  <p role="note" style="margin: 0; padding: 8px 20px; background: #FFFFFF; border-bottom: 1px solid #E3E6EA; font-size: 14px; color: #4B5765;">You see only the operations you are added to. Case details and other incidents stay with the coordinator.</p>
+  <section style="background: #FFFFFF; border-bottom: 1px solid #E3E6EA; padding: 12px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px;">
+    <div style="display: flex; flex-direction: column;">
+      <h1 style="margin: 0; font-size: 24px; font-weight: 600;">Missing person search</h1>
+      <span style="font-size: 14px; color: #4B5765;">Wavecrest · run by the coordinator · started <span style="font-family: 'IBM Plex Mono', monospace;">19:40</span></span>
+    </div>
+    <span style="display: flex; align-items: center; gap: 6px; background: #FDECEA; color: #8C1D18; border: 1px solid #B3261E; border-radius: 4px; padding: 4px 10px; font-size: 15px; font-weight: 600;"><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#B3261E"></circle></svg>Active</span>
+    <span aria-label="Running for 1 hour 16 minutes" style="font-family: 'IBM Plex Mono', monospace; font-size: 30px; font-weight: 600;">1:16:04</span>
+    <button style="margin-left: auto; min-height: 44px; padding: 0 14px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 15px;">Call the coordinator</button>
+  </section>
+  <main style="flex-grow: 1; display: flex; flex-wrap: wrap; align-items: stretch;">
+    <section aria-label="Your sector on the map" style="flex: 999 1 520px; min-width: 0; min-height: 420px; position: relative; background: #DCE3EA;">
+      <svg width="100%" height="100%" viewBox="150 40 200 260" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0;" aria-hidden="true">
+        <rect x="0" y="0" width="420" height="400" fill="#DCE3EA"></rect>
+        <path d="M0,0 L322,0 C318,36 300,62 296,98 C292,134 318,168 324,204 C330,236 306,266 296,302 C286,338 292,374 284,410 L0,410 Z" fill="#FAFAF9"></path>
+        <path d="M266,100 C262,160 258,200 254,260 C250,300 248,330 246,340" fill="none" stroke="#C9CED5" stroke-width="2"></path>
+        <g stroke="#E3E6EA" stroke-width="1" fill="none"><path d="M200,120 L290,140"></path><path d="M190,170 L300,190"></path><path d="M180,220 L300,236"></path><path d="M210,100 L170,300"></path></g>
+        <g fill="none" stroke="#B7BEC7" stroke-width="0.8" stroke-dasharray="2 2"><path d="M200,70 L250,72 L248,112 L198,110 Z"></path><path d="M250,72 L298,80 L296,116 L248,112 Z"></path><path d="M198,110 L248,112 L246,160 L194,158 Z"></path><path d="M194,158 L246,160 L244,212 L190,208 Z"></path><path d="M246,160 L318,170 L322,220 L244,212 Z"></path></g>
+        <path d="M248,112 L296,116 L318,170 L246,160 Z" fill="#8A5300" fill-opacity="0.16" stroke="#8A5300" stroke-width="2.4"></path>
+        <text x="270" y="146" font-family="IBM Plex Mono, monospace" font-weight="600" font-size="14" fill="#6B3F00">D</text>
+        <path d="M252,124 L258,130 L252,136 L246,130 Z" fill="#B3261E" stroke="#FFFFFF" stroke-width="1"></path>
+        <text x="228" y="122" font-family="IBM Plex Sans, sans-serif" font-size="7" font-weight="600" fill="#8C1D18">Last seen 19:20</text>
+        <circle cx="276" cy="150" r="3.5" fill="#1F5FA8" stroke="#FFFFFF" stroke-width="1"></circle>
+      </svg>
+      <div style="position: absolute; left: 14px; bottom: 14px; display: flex; flex-wrap: wrap; gap: 12px; background: #FFFFFF; border: 1px solid #7A8594; border-radius: 6px; padding: 8px 12px; font-size: 13px; color: #4B5765;">
+        <span style="display: flex; align-items: center; gap: 6px;"><svg width="14" height="10" aria-hidden="true"><rect width="14" height="10" fill="#8A5300" fill-opacity="0.25" stroke="#8A5300" stroke-width="2"></rect></svg>Your sector</span>
+        <span style="display: flex; align-items: center; gap: 6px;"><svg width="14" height="10" aria-hidden="true"><rect width="14" height="10" fill="none" stroke="#7A8594" stroke-dasharray="2 2"></rect></svg>Other sectors</span>
+        <span style="display: flex; align-items: center; gap: 6px;"><svg width="10" height="10" aria-hidden="true"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#B3261E"></path></svg>Last seen</span>
+        <span style="display: flex; align-items: center; gap: 6px;"><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="4" fill="#1F5FA8"></circle></svg>Your team</span>
+        <span>© OpenStreetMap contributors</span>
+      </div>
+    </section>
+    <aside aria-label="Your task" style="flex: 1 1 380px; max-width: 440px; min-width: 0; border-left: 1px solid #E3E6EA; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px; padding: 16px 20px;">
+      <section style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;"><h2 style="margin: 0; font-size: 18px; font-weight: 600;">Your sector: <span style="font-family: 'IBM Plex Mono', monospace;">D</span></h2><span style="display: flex; align-items: center; gap: 5px; font-size: 15px; font-weight: 600; color: #6B3F00;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>Searching since <span style="font-family: 'IBM Plex Mono', monospace;">19:58</span></span></div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5;">Coastal path and dunes from the beach path north to the lookout. Check under the boardwalks.</p>
+        <button style="min-height: 52px; background: #8A5300; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 17px; font-weight: 600;">Mark sector D cleared</button>
+      </section>
+      <section style="display: flex; flex-direction: column; gap: 6px; background: #F3F4F6; border: 1px solid #7A8594; border-radius: 6px; padding: 12px;">
+        <h2 style="margin: 0; font-size: 15px; font-weight: 600;">Person missing</h2>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45;">Adult, grey jacket and blue cap, on foot. Last seen <span style="font-family: 'IBM Plex Mono', monospace;">19:20</span> at the beach path.</p>
+        <p style="margin: 0; font-size: 13px; color: #4B5765;">Removed from your screen when the operation closes.</p>
+      </section>
+      <section style="display: flex; flex-direction: column; gap: 8px;">
+        <label for="resp-sighting" style="font-size: 15px; font-weight: 600;">Send an update to the coordinator</label>
+        <textarea id="resp-sighting" rows="3" style="border: 1px solid #7A8594; border-radius: 6px; padding: 10px 12px; font-size: 15px; color: #0E141B; background: #FFFFFF; resize: none; outline: 3px solid #8A5300; outline-offset: 2px;">Footprints heading north on the dune path, about 300 m past the lookout.</textarea>
+        <p style="margin: 0; font-size: 13px; color: #4B5765;">Describe what you see. No names or numbers. The privacy guard checks every update.</p>
+        <div style="display: flex; gap: 8px;">
+          <button style="min-height: 46px; padding: 0 16px; background: #0E141B; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 15px; font-weight: 600;">Send update</button>
+          <button style="min-height: 46px; padding: 0 16px; background: #FFFFFF; color: #0E141B; border: 1px solid #7A8594; border-radius: 6px; font-size: 15px;">Mark my position</button>
+        </div>
+      </section>
+      <section style="display: flex; flex-direction: column; gap: 6px;">
+        <h2 style="margin: 0; font-size: 15px; font-weight: 600;">Your updates</h2>
+        <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 10px; font-size: 14px; line-height: 1.4;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600;">20:30</span><span>Lookout checked, nobody there.</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600;">19:58</span><span>On scene, starting at the beach path.</span>
+        </div>
+      </section>
+    </aside>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

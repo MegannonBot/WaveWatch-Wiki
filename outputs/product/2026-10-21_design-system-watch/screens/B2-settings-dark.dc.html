@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Watch refined settings, dark</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F2A93B}a:hover{color:#E8EDF2}
+button{font:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #0B0F14; color: #E8EDF2; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column;">
+  <header style="background: #131A22; border-bottom: 1px solid #263241; padding: 8px 16px; display: flex; align-items: center; gap: 10px; height: 60px; box-sizing: border-box;">
+    <button aria-label="Back" style="width: 44px; height: 44px; border: 1px solid #6A7889; border-radius: 6px; background: transparent; color: #E8EDF2; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <h1 style="margin: 0; font-size: 20px; font-weight: 600;">Settings</h1>
+  </header>
+  <div style="flex-grow: 1; overflow: hidden; padding: 16px; display: flex; flex-direction: column; gap: 18px;">
+    <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 8px;">
+      <legend style="font-size: 14px; font-weight: 600; color: #A7B3C0; padding: 0 0 8px;">Appearance</legend>
+      <div role="radiogroup" aria-label="Theme" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid #6A7889; border-radius: 6px;">
+        <button role="radio" aria-checked="false" style="min-height: 48px; border: 0; background: transparent; color: #E8EDF2; font-size: 15px;">Light</button>
+        <button role="radio" aria-checked="true" style="min-height: 48px; border: 0; border-left: 1px solid #6A7889; background: #E8EDF2; color: #0B0F14; font-size: 15px; font-weight: 600;">Dark</button>
+        <button role="radio" aria-checked="false" style="min-height: 48px; border: 0; border-left: 1px solid #6A7889; background: transparent; color: #E8EDF2; font-size: 15px;">Match phone</button>
+      </div>
+    </fieldset>
+    <section style="display: flex; flex-direction: column;">
+      <h2 style="margin: 0 0 8px; font-size: 14px; font-weight: 600; color: #A7B3C0;">Organisation</h2>
+      <div style="background: #131A22; border: 1px solid #263241; border-radius: 6px; display: flex; flex-direction: column;">
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; border-bottom: 1px solid #263241; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Members</span><span style="display: flex; align-items: center; gap: 8px; color: #A7B3C0; font-size: 15px;"><span style="font-family: 'IBM Plex Mono', monospace;">4</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span></a>
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; border-bottom: 1px solid #263241; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Areas</span><span style="display: flex; align-items: center; gap: 8px; color: #A7B3C0; font-size: 15px;"><span style="font-family: 'IBM Plex Mono', monospace;">12</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span></a>
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; border-bottom: 1px solid #263241; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Sources and grades</span><span style="display: flex; align-items: center; gap: 8px; color: #A7B3C0; font-size: 15px;"><span style="font-family: 'IBM Plex Mono', monospace;">9</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span></a>
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; border-bottom: 1px solid #263241; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Contacts and role players</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A7B3C0" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Audit log</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A7B3C0" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+      </div>
+    </section>
+    <section style="display: flex; flex-direction: column;">
+      <h2 style="margin: 0 0 8px; font-size: 14px; font-weight: 600; color: #A7B3C0;">Privacy</h2>
+      <div style="background: #131A22; border: 1px solid #263241; border-radius: 6px; display: flex; flex-direction: column;">
+        <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; border-bottom: 1px solid #263241; color: #E8EDF2; text-decoration: none; font-size: 16px;"><span>Keep records for</span><span style="display: flex; align-items: center; gap: 8px; color: #A7B3C0; font-size: 15px;"><span><span style="font-family: 'IBM Plex Mono', monospace;">12</span> months</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span></a>
+        <div style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 12px; font-size: 16px;"><span id="guard-label">Privacy guard on every text box</span><span role="switch" aria-checked="true" aria-labelledby="guard-label" aria-disabled="true" style="width: 48px; height: 28px; border-radius: 14px; background: #F2A93B; position: relative;"><span style="position: absolute; right: 3px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #1A1206;"></span></span></div>
+      </div>
+      <p style="margin: 8px 0 0; font-size: 14px; color: #A7B3C0;">The privacy guard cannot be switched off.</p>
+    </section>
+    <section style="display: flex; flex-direction: column; gap: 8px;">
+      <h2 style="margin: 0; font-size: 14px; font-weight: 600; color: #A7B3C0;">Account</h2>
+      <p style="margin: 0; font-size: 15px;">Signed in as coordinator@demo.wavewatch.test</p>
+      <button style="align-self: flex-start; min-height: 48px; padding: 0 16px; background: transparent; color: #E8EDF2; border: 1px solid #6A7889; border-radius: 6px; font-size: 16px;">Sign out</button>
+    </section>
+  </div>
+  <nav aria-label="Sections" style="background: #131A22; border-top: 1px solid #263241; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); height: 60px;">
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #A7B3C0; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z M9 3v15 M15 6v15"></path></svg>Map</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #A7B3C0; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"></path></svg>Log</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #A7B3C0; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Cases</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #A7B3C0; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>Ops</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #A7B3C0; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>Insights</a>
+    <a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #E8EDF2; font-size: 13px; font-weight: 600; text-decoration: none; box-shadow: inset 0 3px 0 #F2A93B;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>More</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

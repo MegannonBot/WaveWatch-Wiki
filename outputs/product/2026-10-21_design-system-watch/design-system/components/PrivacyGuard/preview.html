@@ -1,0 +1,14 @@
+<!-- @dsCard group="Privacy" height=260 subtitle="A phone number caught in a description" -->
+<div style="padding:var(--space-4);background:var(--bg);color:var(--ink);font-family:var(--font-sans);display:flex;flex-direction:column;gap:6px;max-width:420px;">
+  <label for="pg-seen" style="font-size:14px;font-weight:600;">What was seen <span style="font-weight:400;color:var(--ink-muted);">(optional)</span></label>
+  <textarea id="pg-seen" rows="3" aria-describedby="pg-guard" style="border:2px solid var(--accent);border-radius:var(--radius-lg);padding:10px 12px;font:400 16px/1.4 var(--font-sans);color:var(--ink);background:var(--surface);resize:none;">Two people in dark hoodies checking gates, one phoned 0XX XXX XXXX, walked towards the beach.</textarea>
+  <div id="pg-guard" role="alert" style="display:flex;flex-direction:column;gap:var(--space-2);border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);border-radius:var(--radius-lg);padding:10px 12px;font-size:15px;">
+    <span style="display:flex;gap:var(--space-2);align-items:center;font-weight:600;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2z M12 10v5 M12 18h.01"></path></svg>This looks like a phone number</span>
+    <span>Describe what people did and wore. Never identify them.</span>
+    <div style="display:flex;gap:var(--space-2);">
+      <button style="min-height:44px;padding:0 14px;background:var(--accent-ink);color:var(--accent-soft);border:0;border-radius:var(--radius-lg);font:600 15px/1 var(--font-sans);">Remove number</button>
+      <button style="min-height:44px;padding:0 14px;background:transparent;color:var(--accent-ink);border:1px solid var(--accent-ink);border-radius:var(--radius-lg);font:400 15px/1 var(--font-sans);">Keep as typed</button>
+    </div>
+  </div>
+</div>
+<script></script>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Operations list, light</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8A5300}a:hover{color:#0E141B}
+button{font:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F4F6; color: #0E141B; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column;">
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E3E6EA; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; height: 60px; box-sizing: border-box;">
+    <div style="display: flex; flex-direction: column;">
+      <span style="font-weight: 600; font-size: 19px; line-height: 1.1;">WaveWatch</span>
+      <span style="font-size: 13px; color: #4B5765;">Jeffreys Bay · Coordinator</span>
+    </div>
+    <span style="display: flex; align-items: center; gap: 6px; border: 1px solid #2B5A1E; color: #2B5A1E; border-radius: 4px; padding: 4px 8px; font-size: 14px; font-weight: 600;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Saved</span>
+  </header>
+  <div style="flex-grow: 1; overflow: hidden; padding: 14px 16px; display: flex; flex-direction: column; gap: 14px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <h1 style="margin: 0; font-size: 22px; font-weight: 600;">Operations</h1>
+      <button style="display: flex; align-items: center; gap: 6px; min-height: 48px; padding: 0 16px; background: #8A5300; color: #FFFFFF; border: 0; border-radius: 6px; font-size: 16px; font-weight: 600;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Start operation</button>
+    </div>
+    <h2 style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600;"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="6" fill="#B3261E"></circle></svg>Active <span style="font-weight: 400; color: #4B5765;">1</span></h2>
+    <a href="#" style="display: flex; flex-direction: column; gap: 10px; background: #FFFFFF; border: 2px solid #B3261E; border-radius: 6px; padding: 12px; color: #0E141B; text-decoration: none;">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 10px;">
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 18px; font-weight: 600;">Missing person search</span><span style="font-size: 14px; color: #4B5765;">Wavecrest · started <span style="font-family: 'IBM Plex Mono', monospace;">19:40</span></span></div>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600; color: #B3261E;">1:16</span>
+      </div>
+      <div aria-label="Sectors: 2 cleared, 3 being searched, 1 not started" role="img" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px;">
+        <span style="height: 10px; background: #2B5A1E; border-radius: 2px;"></span><span style="height: 10px; background: #2B5A1E; border-radius: 2px;"></span><span style="height: 10px; background: #8A5300; border-radius: 2px;"></span><span style="height: 10px; background: #8A5300; border-radius: 2px;"></span><span style="height: 10px; background: #8A5300; border-radius: 2px;"></span><span style="height: 10px; border: 1px solid #7A8594; border-radius: 2px; box-sizing: border-box;"></span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 14px; color: #4B5765;"><span><span style="font-family: 'IBM Plex Mono', monospace; color: #0E141B; font-weight: 600;">2</span> of 6 sectors cleared</span><span><span style="font-family: 'IBM Plex Mono', monospace; color: #0E141B; font-weight: 600;">5</span> responders</span></div>
+    </a>
+    <h2 style="margin: 4px 0 0; display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600;"><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" fill="none" stroke="#8A5300" stroke-width="3"></rect></svg>Stood down <span style="font-weight: 400; color: #4B5765;">1</span></h2>
+    <a href="#" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; background: #FFFFFF; border: 1px solid #7A8594; border-radius: 6px; padding: 12px; color: #0E141B; text-decoration: none;">
+      <span style="font-size: 16px; font-weight: 600;">Vehicle collision</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px;">18:02</span>
+      <span style="font-size: 14px; color: #4B5765;">Central, main road · waiting on tow</span><span></span>
+    </a>
+    <h2 style="margin: 4px 0 0; display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600;"><svg width="12" height="12" aria-hidden="true"><path d="M1 6l3 4 7-9" fill="none" stroke="#2B5A1E" stroke-width="2.5"></path></svg>Closed this week <span style="font-weight: 400; color: #4B5765;">2</span></h2>
+    <div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #7A8594; border-radius: 6px;">
+      <a href="#" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; padding: 12px; border-bottom: 1px solid #E3E6EA; color: #0E141B; text-decoration: none;"><span style="font-size: 16px;">Medical emergency</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #4B5765;">Mon · 0:14</span><span style="font-size: 14px; color: #4B5765;">Supertubes · after-action filed</span><span></span></a>
+      <a href="#" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; padding: 12px; color: #0E141B; text-decoration: none;"><span style="font-size: 16px;">Fire, veld</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #4B5765;">Sun · 0:52</span><span style="font-size: 14px; color: #4B5765;">Fountains · after-action filed</span><span></span></a>
+    </div>
+  </div>
+  <nav aria-label="Sections" style="background: #FFFFFF; border-top: 1px solid #E3E6EA; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); height: 60px;">
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #4B5765; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z M9 3v15 M15 6v15"></path></svg>Map</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #4B5765; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"></path></svg>Log</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #4B5765; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Cases</a>
+    <a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #0E141B; font-size: 13px; font-weight: 600; text-decoration: none; box-shadow: inset 0 3px 0 #8A5300;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>Ops</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #4B5765; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>Insights</a>
+    <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #4B5765; font-size: 13px; text-decoration: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>More</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
