@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-21] decision | Design B approved
+
+**Franco approved the direction B design, team positions for responders and calling the coordinator without showing the number.**
+New page [[decisions/2026-10-21_decision-design-b-approved]]. Old STATE Design run: "Direction B, Watch, refined ... 4 open points approved; Design System artifact next".
+
 ## [2026-10-21] design | Operator screens on a computer
 
 **Three computer screens were drawn in direction B for the control room: the coordinator's overview, a live operation, and a security company's responder view.**
