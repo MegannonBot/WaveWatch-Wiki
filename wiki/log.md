@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] plan | Next Mini run brief: fixes, phone access, M3
+
+**The brief for the next Mini run is written: the four layout fixes, phone access to the test database, then M3 (WW-17 to WW-23) on a new branch `m3`.**
+Brief in `outputs/technology/2026-10-22_m3-run/`. Autosave confirmed working after the fix (pushed on its own at 12:55 and 12:56). New Needs Franco 10.
+
 ## [2026-10-22] fix | Autosave time limits and pull before push
 
 **Fixed versions of the autosave and save scripts were prepared for Franco to install, after the autosave hung on 2026-10-21 and failed silently on 2026-10-22.**
