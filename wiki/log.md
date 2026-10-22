@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] build | Design watch run, part 2
+
+**Part 2 of the design run finished on `design/watch` with all suites passing; its report is filed.**
+Report [[reports/2026-10-21_report_design-watch-run-part-2]]. Glossary: added "Watch strip" and "On this watch". Five of the six small part 2 choices are still to be read from the app handover at the phone check.
+
 ## [2026-10-22] decision | Last design choices; park and beach colours
 
 **Franco ruled on the five remaining design choices and asked for park and beach colours, now in the design system.**

@@ -115,5 +115,6 @@ last_updated: 2026-10-22
 | [[reports/2026-10-20_report_m0-m2-run]] | What the first Mini build run produced on branch m0-m2: tickets WW-01 to WW-16, tests, defaults taken and what still needs Franco. | active |
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 | [[reports/2026-10-21_report_design-watch-run]] | The first part of the WaveWatch Watch design run on branch design/watch: fonts, tokens, theme setting, shell and map done; the rest not done. | active |
+| [[reports/2026-10-21_report_design-watch-run-part-2]] | The second Mini design run finished the WaveWatch Watch look on branch design/watch, applied the four new rulings, and passed every test suite. | active |
 
-*68 pages.*
+*69 pages.*

@@ -3,7 +3,7 @@ type: concept
 title: Glossary
 summary: The product terms WaveWatch uses, with their meaning.
 status: active
-last_updated: 2026-10-21
+last_updated: 2026-10-22
 ---
 
 # Glossary
@@ -34,6 +34,8 @@ last_updated: 2026-10-21
 | Resident bulletin | The anonymised weekly update for the community group |
 | Quick log | The short incident form: type, place, time and an optional line |
 | Sync chip | The status in the header: Saved, Saving, or Offline with the number of changes waiting |
+| Watch strip | The 24-hour band in the header showing each incident of the last 24 hours as a shape, with a line at Now |
+| On this watch | The incidents of the last 24 hours, listed under the map |
 | Areas | The 15 suburbs used as working zones ([[decisions/2026-10-20_decision-suburbs-as-zones]]) |
 
 Incident types (22 in 8 groups): break-ins (residential burglary, business burglary, attempted break-in or trespass); vehicle crime (theft from vehicle, vehicle theft or hijacking); violent (robbery or mugging, assault); property (theft other, cable or infrastructure theft, vandalism); suspicious (suspicious activity, LPR or CCTV vehicle alert, begging or harassment at homes); road safety (pedestrian struck, vehicle collision, cyclist or motorcyclist collision); emergencies (medical emergency, fire, missing person, water incident); other (drug-related, other).
