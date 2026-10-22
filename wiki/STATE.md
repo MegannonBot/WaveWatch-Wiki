@@ -14,7 +14,7 @@ last_updated: 2026-10-21
 
 | Fact | Value | Since | Source |
 |---|---|---|---|
-| Stage | M0 to M2 in the Watch look merged into `main` of `WaveWatch-App` at `5d9a983` (from `design/watch` `7a99b46`; 381 unit, 234 rules, 49 end-to-end, 5 production-build tests passing). Not deployed; emulator only. Next Mini run: four layout fixes and phone access to the test database | 2026-10-22 | Franco's Terminal output, 2026-10-22; [[decisions/2026-10-22_decision-design-watch-merge]] |
+| Stage | M0 to M2 in the Watch look on `main` (`5d9a983`). M3 (cases and analysis) plus the four layout fixes and phone access built on branch `m3` at `bac98a2`: 521 unit, 267 rules, 69 end-to-end, 7 production-build tests passing. Not merged, not deployed; emulator only | 2026-10-22 | [[reports/2026-10-22_report_m3-run]] |
 | Name | WaveWatch | 2026-10-20 | [[decisions/2026-10-20_decision-product-name-wavewatch]] |
 | Scope | OSINT and incident coordination: reports, incidents, cases, operations, patrols, SAPS liaison | 2026-10-20 | [[decisions/2026-10-20_decision-osint-incident-coordination]] |
 | First organisation | Wavecrest Watch, Wavecrest, Jeffreys Bay | 2026-10-21 | [[decisions/2026-10-21_decision-built-for-wavecrest-watch]] |
@@ -47,7 +47,7 @@ last_updated: 2026-10-21
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | When the M3 run reports (running 2026-10-22, final test run in progress): read its handover, then the phone test and the run's open choices | Layout fixes, phone access, M3 |
+| 10 | Rule on the M3 run's 21 choices (handover on `m3`, section Choices to confirm), look at `docs/screenshots/m3/`, then merge `m3` or not | M3 on `main` |
 | 5 | Supply the security companies and camera networks to load; the public-source list kept only the municipal network and the watches ([[research/2026-10-21_research_jbay-role-players]]) | Seeds sources, cameras and presets |
 | 6 | Send Hannes (an attorney) the POPIA questions in `outputs/legal/2026-10-21_popia-questions-hannes/`; file his written answers | Required before Gate 1 |
-| 7 | Time a quick log on a phone (WW-12, target under 20 seconds); needs the app to reach the test database from a phone first (next Mini run) | Closes WW-12 |
+| 7 | Time a quick log on a phone (WW-12, target under 20 seconds) using the phone steps at the top of the M3 handover; phone access is untested on a real phone | Closes WW-12 |

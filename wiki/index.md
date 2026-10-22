@@ -117,5 +117,6 @@ last_updated: 2026-10-22
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 | [[reports/2026-10-21_report_design-watch-run]] | The first part of the WaveWatch Watch design run on branch design/watch: fonts, tokens, theme setting, shell and map done; the rest not done. | active |
 | [[reports/2026-10-21_report_design-watch-run-part-2]] | The second Mini design run finished the WaveWatch Watch look on branch design/watch, applied the four new rulings, and passed every test suite. | active |
+| [[reports/2026-10-22_report_m3-run]] | The Mini fixed the four layout points, made the test database reachable from a phone for development, and built M3 (cases, cameras, gap streets, series matching, patterns, SAPS liaison, station figures) on branch m3. | active |
 
-*70 pages.*
+*71 pages.*

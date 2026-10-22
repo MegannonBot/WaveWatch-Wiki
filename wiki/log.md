@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] build | M3 run on the Mini
+
+**The Mini built the four layout fixes, phone access and M3 (WW-17 to WW-23) on branch `m3`, with every test passing on a cleared emulator.**
+Report [[reports/2026-10-22_report_m3-run]]. Old STATE Stage: "M0 to M2 in the Watch look merged into `main`". Glossary: "Case" reworded so it does not say WaveWatch investigates; added "Footage request" and "Station figures". The 500-incident hang was the On this watch sheet, not label overlap.
+
 ## [2026-10-22] plan | Next Mini run brief: fixes, phone access, M3
 
 **The brief for the next Mini run is written: the four layout fixes, phone access to the test database, then M3 (WW-17 to WW-23) on a new branch `m3`.**

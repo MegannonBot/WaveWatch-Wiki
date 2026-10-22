@@ -15,7 +15,7 @@ last_updated: 2026-10-22
 | Incident | Something that happened: a crime, collision, emergency or suspicious activity, with a time or time window and a place |
 | Report | A raw piece of information as it arrived (message, alert, camera result), graded and linked or dismissed |
 | Reports feed | The list of reports waiting to be linked or dismissed |
-| Case | An investigation that links incidents, sightings, camera checks and tasks into one pack for SAPS |
+| Case | A file that brings related incidents, sightings, camera checks and tasks together so they can be handed to SAPS as one pack. WaveWatch does not investigate; SAPS does |
 | Series | Cases believed to involve the same offenders |
 | Subject | An unidentified person or group described by behaviour, clothing and build ("Pair A") |
 | Sighting | A time and place a subject was seen, with its source and match confidence |
@@ -30,6 +30,8 @@ last_updated: 2026-10-22
 | Grade | [[concepts/Source-grading]] |
 | Patrol zone | A suggested patrol area with its best time window |
 | Case pack | The summary of a case for a SAPS detective |
+| Footage request | The text sent to a camera owner asking them to check and keep footage for a time window; the footage stays with its owner |
+| Station figures | The SAPS station's published crime figures, entered by financial-year quarter and compared with logged incidents |
 | After-action report | The summary of an operation without personal details |
 | Resident bulletin | The anonymised weekly update for the community group |
 | Quick log | The short incident form: type, place, time and an optional line |
