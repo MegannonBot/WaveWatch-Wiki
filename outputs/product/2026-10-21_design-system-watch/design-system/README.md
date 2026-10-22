@@ -27,7 +27,9 @@ Approved by Franco Megannon on 2026-10-21. Source: the design canvas https://cla
 
 **The time column.** Lists, the reports feed, the response log and timelines put the time first, in a fixed 52px mono column, so the eye runs down the times like a logbook.
 
-**Shapes carry meaning, not colour alone.** Break-ins are squares (`family-breakin`), suspicious activity circles (`family-suspicious`), vehicle crime triangles (`family-vehicle`). Every legend names the shape in words. Status chips always pair an icon with text: Saved with a check, Searching with a clock, Active with a dot and the word.
+**Shapes carry meaning, not colour alone.** Each of the eight incident families has its own shape and colour: break-ins squares (`family-breakin`), suspicious activity circles (`family-suspicious`), vehicle crime triangles (`family-vehicle`), robbery and assault diamonds (`family-violent`), theft and damage hexagons (`family-property`), road safety wide bars (`family-road`), emergencies a plus (`family-emergency`), drug-related and other pentagons (`family-other`). Every legend names the shape in words. Added 2026-10-21 after the first design run found five families without one (see FamilyShapes).
+
+**Map ranges and marks.** The map offers 24 h, 7 d, 30 d, 90 d and All. The newest incident gets a ring. "Not reported to SAPS" is a filter, not a marker. Status chips always pair an icon with text: Saved with a check, Searching with a clock, Active with a dot and the word.
 
 **Mono is for data only.** IBM Plex Mono sets times, grades, counts and the operation clock. Everything else is IBM Plex Sans.
 
@@ -42,7 +44,7 @@ Approved by Franco Megannon on 2026-10-21. Source: the design canvas https://cla
 - Controls: `control-border` on every input, select and outline button (3:1 or more). `divider` is for hairlines between rows only.
 - Accent: `accent` for the one main action, the Now marker and `focus-ring`. `accent-soft` with `accent-ink` for the privacy guard, selected options, near-repeats and searching.
 - States: `saved-ink` (saved, cleared), `error-bg`, `error-ink`, `error-line` (errors, the Active operation).
-- Map: `map-sea`, `map-land`, `map-road`, `map-road-major`, `map-label`, with incidents drawn in the family colours.
+- Map: `map-sea` (sea and lakes), `map-land`, `map-park`, `map-beach`, `map-road`, `map-road-major`, `map-label`, with incidents drawn in the family colours.
 
 ## Type
 

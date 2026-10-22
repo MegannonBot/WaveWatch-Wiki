@@ -40,14 +40,14 @@ last_updated: 2026-10-21
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
 | Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
-| Design run | Design system "WaveWatch Watch" approved (https://claude.ai/artifact/NL9nPKd5FdBfVvLMiTwZwV; vault copy `outputs/product/2026-10-21_design-system-watch/`). Mini run part 1 on `design/watch`: steps 1 to 6b done (fonts, tokens with 76 contrast checks passing, theme setting, shell, map); 6c to 6h, copy changes, full tests and screenshots open (usage limit reached) | 2026-10-21 | [[reports/2026-10-21_report_design-watch-run]] |
+| Design run | Finished on `design/watch` (parts 1 and 2): every screen restyled, eight family shapes, @mention fix; tests 297 unit (40 skipped), 234 rules, 49 end-to-end, 5 production-build, all passing. Five new family colours missing in the app: the vault copy of `tokens.json` was stale until 2026-10-22 (now fixed); the Mini copies it and runs `npm run tokens` | 2026-10-22 | Mini run summary pasted by Franco, 2026-10-22; part 2 report in the vault once pulled |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | Start part 2 of the Mini design run: same session setup, then send "Read and follow ~/wavewatch/WaveWatch-Wiki/outputs/technology/2026-10-21_design-watch-run/2026-10-21_technology_mini-design-prompt-part-2.md" | Finishes the look, the eight family shapes and the @mention fix |
+| 10 | After the Mini has applied the new `tokens.json` (eight family colours, park and beach): check `design/watch` on your phone in light and dark, then merge | Last step before `main` |
 | 5 | Supply the security companies and camera networks to load; the public-source list kept only the municipal network and the watches ([[research/2026-10-21_research_jbay-role-players]]) | Seeds sources, cameras and presets |
 | 6 | Send Hannes (an attorney) the POPIA questions in `outputs/legal/2026-10-21_popia-questions-hannes/`; file his written answers | Required before Gate 1 |
 | 7 | Time a quick log on a phone (WW-12, target under 20 seconds), on the new look after the design run | Closes WW-12 |

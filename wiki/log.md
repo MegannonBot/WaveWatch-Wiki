@@ -10,6 +10,16 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] decision | Last design choices; park and beach colours
+
+**Franco ruled on the five remaining design choices and asked for park and beach colours, now in the design system.**
+New page [[decisions/2026-10-22_decision-design-run-final-choices]]. Design system and vault copy updated, checksums match.
+
+## [2026-10-22] build | Design run finished; family colours fixed in the vault
+
+**The Mini finished the design run on `design/watch` with all tests passing, but the five new family colours were missing because the vault copy of `tokens.json` was stale; it is now fixed.**
+A copy from Cowork to the laptop on 2026-10-21 reported success but wrote the old file; rewritten 2026-10-22 and checked by checksum (`8e0b79b0`). Laptop autosave still stuck on `git fetch` since 16:09 on 2026-10-21. Mistakes register candidate for Franco: check a copied file's content after copying it to the laptop.
+
 ## [2026-10-21] decision | Built for Wavecrest Watch; security company list withdrawn
 
 **Franco said WaveWatch is built for Wavecrest Watch, and the security company list from a business directory was withdrawn as wrong.**

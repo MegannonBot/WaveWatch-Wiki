@@ -3,7 +3,7 @@ type: index
 title: WaveWatch index
 summary: Generated catalogue of every page in the vault.
 status: active
-last_updated: 2026-10-21
+last_updated: 2026-10-22
 ---
 
 # WaveWatch index
@@ -53,6 +53,7 @@ last_updated: 2026-10-21
 | [[decisions/2026-10-21_decision-mini-runs-auto-mode]] | Claude Code build runs on the Mac Mini may run in auto mode; the hard limits in each brief still apply. | active |
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
 | [[decisions/2026-10-21_decision-web-stack-offline-not-required]] | The web stack stays as approved, but working offline is no longer a requirement; the offline saving already built stays and nothing more is designed or built for it. | active |
+| [[decisions/2026-10-22_decision-design-run-final-choices]] | The map keeps type and Pins or Heat on its top bar, More keeps its list of sections, parks and beaches get their own map colours, demo records read "Demo", and "Create incident" is an outline button. | active |
 
 ## Specs
 
@@ -115,4 +116,4 @@ last_updated: 2026-10-21
 | [[reports/2026-10-21_report_design-directions]] | Franco ruled on the architecture, the operator and Hannes's start; ran the build on his laptop; and three design directions were drawn for him to choose from. | active |
 | [[reports/2026-10-21_report_design-watch-run]] | The first part of the WaveWatch Watch design run on branch design/watch: fonts, tokens, theme setting, shell and map done; the rest not done. | active |
 
-*67 pages.*
+*68 pages.*
