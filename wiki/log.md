@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] decision | M3 choices approved; merge after the phone test
+
+**Franco approved the M3 run's 21 choices and ruled that `m3` merges after he times a quick log on his phone.**
+New page [[decisions/2026-10-22_decision-m3-choices-and-merge]]. Check page of 80 screenshots published. Three small fixes added to `outputs/technology/2026-10-22_layout-fixes/`.
+
 ## [2026-10-22] build | M3 run on the Mini
 
 **The Mini built the four layout fixes, phone access and M3 (WW-17 to WW-23) on branch `m3`, with every test passing on a cleared emulator.**

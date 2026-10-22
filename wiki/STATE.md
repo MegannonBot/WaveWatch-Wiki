@@ -47,7 +47,7 @@ last_updated: 2026-10-21
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | Rule on the M3 run's 21 choices (handover on `m3`, section Choices to confirm), look at `docs/screenshots/m3/`, then merge `m3` or not | M3 on `main` |
+| 10 | After the phone test (7): merge `m3` into `main` | [[decisions/2026-10-22_decision-m3-choices-and-merge]] |
 | 5 | Supply the security companies and camera networks to load; the public-source list kept only the municipal network and the watches ([[research/2026-10-21_research_jbay-role-players]]) | Seeds sources, cameras and presets |
 | 6 | Send Hannes (an attorney) the POPIA questions in `outputs/legal/2026-10-21_popia-questions-hannes/`; file his written answers | Required before Gate 1 |
-| 7 | Time a quick log on a phone (WW-12, target under 20 seconds) using the phone steps at the top of the M3 handover; phone access is untested on a real phone | Closes WW-12 |
+| 7 | Time a quick log on your phone (WW-12, target under 20 seconds) with the phone steps at the top of the M3 handover; first real test of phone access; gates the `m3` merge | Closes WW-12 |

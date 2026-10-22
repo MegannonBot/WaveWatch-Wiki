@@ -55,6 +55,7 @@ last_updated: 2026-10-22
 | [[decisions/2026-10-21_decision-web-stack-offline-not-required]] | The web stack stays as approved, but working offline is no longer a requirement; the offline saving already built stays and nothing more is designed or built for it. | active |
 | [[decisions/2026-10-22_decision-design-run-final-choices]] | The map keeps type and Pins or Heat on its top bar, More keeps its list of sections, parks and beaches get their own map colours, demo records read "Demo", and "Create incident" is an outline button. | active |
 | [[decisions/2026-10-22_decision-design-watch-merge]] | Franco passed the look check from screenshots, approved four small part 2 choices, and ruled to merge design/watch into main now with four layout fixes first in the next Mini run. | active |
+| [[decisions/2026-10-22_decision-m3-choices-and-merge]] | Franco approved all 21 choices from the M3 run and ruled that m3 merges into main after he has timed a quick log on his phone. | active |
 
 ## Specs
 
@@ -119,4 +120,4 @@ last_updated: 2026-10-22
 | [[reports/2026-10-21_report_design-watch-run-part-2]] | The second Mini design run finished the WaveWatch Watch look on branch design/watch, applied the four new rulings, and passed every test suite. | active |
 | [[reports/2026-10-22_report_m3-run]] | The Mini fixed the four layout points, made the test database reachable from a phone for development, and built M3 (cases, cameras, gap streets, series matching, patterns, SAPS liaison, station figures) on branch m3. | active |
 
-*71 pages.*
+*72 pages.*

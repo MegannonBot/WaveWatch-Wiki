@@ -8,3 +8,10 @@ From the look check of `design/watch` at `7a99b46` on 2026-10-22 (screenshots in
 4. **The Log screen starts low.** Three rows of buttons sit above the first report. Keep "Log incident" as the one accent button; put Add report, Full form and Paste WhatsApp messages in one row or a menu; keep the Incidents and Reports switch and the New, Linked, Dismissed, All filter.
 
 Each fix: one commit, tests updated, phone and computer screenshots retaken for the screens it touches, light and dark.
+
+## Added after the M3 check (2026-10-22), for the next Mini run on `m3`
+
+5. **Insights screenshots taken while loading.** In light, "When and where", "Incidents per week" and "Repeat locations" show zeros and "Loading". Retake them after data has loaded, and make charts say "Loading" while data loads instead of showing 0.
+6. **Case map legend cut off on the phone** under the Delete case and Case pack buttons. Keep the whole legend visible or let it scroll.
+7. **Canvass status menu cut off on the computer** ("Checked, nothing se..."). Widen the menu or shorten the labels.
+8. **Quick log top three types** frozen when the form opens (the Mini offered this; Franco's answer pending at the time of writing).
