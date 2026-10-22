@@ -8,7 +8,11 @@
 #   - clears a git index.lock only if it is stale (older than 5 minutes, no git running);
 #   - fetches and rebases before pushing; never merges, never force-pushes;
 #   - a failure raises ONE macOS notification per incident and is written to the log,
-#     so silence always means healthy.
+#     so silence always means healthy;
+#   - network steps cannot hang: ssh gives up after 15 s of silence and never asks for a
+#     passphrase, and each network step is cut off after 90 s (added 2026-10-22 after a
+#     fetch hung for 4.5 hours and blocked every later run);
+#   - if GitHub cannot be reached for 60 minutes, that is an alert, not silence.
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin"
 VAULT="${VAULT:-$HOME/WaveWatch}"
@@ -17,6 +21,12 @@ STATE_DIR="$VAULT/.autosave"
 ALERT_ACTIVE="$STATE_DIR/alert.active"
 mkdir -p "$STATE_DIR" 2>/dev/null
 now() { date '+%F %T'; }
+
+# Network safety (2026-10-22). BatchMode stops ssh waiting for a passphrase it can never get.
+export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=15 -o ServerAliveCountMax=2"
+# Run a command with a hard time limit (perl ships with macOS; no coreutils needed).
+limit() { local s="$1"; shift; perl -e 'alarm shift @ARGV; exec @ARGV or exit 127' "$s" "$@"; }
+OFFLINE_SINCE="$STATE_DIR/offline.since"
 
 raise_alert() {
   # $1 = reason tag, $2 = plain sentence
@@ -54,10 +64,16 @@ if [ -n "$(git status --porcelain)" ]; then
   echo "$(now) committed (autosave $TS)"
 fi
 
-# 2. Fetch. Offline is normal for a laptop and is not an alert.
-if ! git fetch -q origin "$BRANCH" 2>/dev/null; then
-  echo "$(now) fetch failed (offline?), retry next cycle"; exit 0
+# 2. Fetch. A short outage is normal for a laptop; an hour of it is an alert.
+if ! FETCH_ERR="$(limit 90 git fetch -q origin "$BRANCH" 2>&1)"; then
+  [ -f "$OFFLINE_SINCE" ] || date +%s > "$OFFLINE_SINCE"
+  echo "$(now) fetch failed, retry next cycle: $(echo "$FETCH_ERR" | tr '\n' ' ' | cut -c1-300)"
+  if [ $(( $(date +%s) - $(cat "$OFFLINE_SINCE") )) -ge 3600 ]; then
+    raise_alert "github_unreachable" "WaveWatch vault has not reached GitHub for an hour. Changes are safe on this Mac. See .autosave/autosave.log."
+  fi
+  exit 0
 fi
+rm -f "$OFFLINE_SINCE"
 
 # 3. Rebase if GitHub moved.
 if [ -n "$(git rev-list HEAD..origin/$BRANCH 2>/dev/null)" ]; then
@@ -71,8 +87,8 @@ fi
 
 # 4. Push if ahead.
 if [ -n "$(git rev-list origin/$BRANCH..HEAD 2>/dev/null)" ]; then
-  if ! git push -q origin "$BRANCH" 2>&1; then
-    echo "$(now) push FAILED"
+  if ! PUSH_ERR="$(limit 90 git push -q origin "$BRANCH" 2>&1)"; then
+    echo "$(now) push FAILED: $(echo "$PUSH_ERR" | tr '\n' ' ' | cut -c1-300)"
     raise_alert "push_failed" "WaveWatch changes are committed but could not reach GitHub. It will keep trying."
     exit 1
   fi
