@@ -10,6 +10,11 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] fix | Autosave time limits and pull before push
+
+**Fixed versions of the autosave and save scripts were prepared for Franco to install, after the autosave hung on 2026-10-21 and failed silently on 2026-10-22.**
+Files and reasons in `outputs/technology/2026-10-22_autosave-fix/`. Cowork cannot write executable files in `tools/`; Franco copies them in. A stray empty `tools/.probe` made by Cowork while checking is removed in the same step. Mistakes register candidate for Franco: test write access on a scratch path outside the vault's tools.
+
 ## [2026-10-22] build | design/watch merged into main
 
 **Franco merged `design/watch` into `main`; `main` now holds M0 to M2 in the Watch look at `5d9a983`.**
