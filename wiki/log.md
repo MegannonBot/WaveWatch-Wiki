@@ -10,6 +10,21 @@ last_updated: 2026-10-21
 
 > Append at the top. Never rewrite an entry; a correction is a new entry. Each entry opens with one bold plain sentence. Cap 2,000 lines, then entries older than 30 days move to `log-archive.md`.
 
+## [2026-10-22] build | design/watch merged into main
+
+**Franco merged `design/watch` into `main`; `main` now holds M0 to M2 in the Watch look at `5d9a983`.**
+Old STATE Stage: "Web app milestones M0 to M2 built on branch `m0-m2` ... Not merged to `main`". Needs Franco 10 cleared.
+
+## [2026-10-22] decision | Look check passed; merge approved
+
+**Franco passed the Watch look from screenshots and approved merging `design/watch` into `main`, with four layout fixes queued for the next Mini run.**
+New page [[decisions/2026-10-22_decision-design-watch-merge]]. Look-check page: https://claude.ai/artifact/AmbNGJNvQwafCWCK6MRzKB. Needs Franco 9 cleared; 10 now pushes the merge; 7 notes the phone cannot reach the test database yet.
+
+## [2026-10-22] build | Design run colours applied
+
+**The Mini applied all eight family colours and the park and beach colours on `design/watch` (`7a99b46`); every test passes with no contrast check skipped.**
+Old STATE Design run: "Five new family colours missing in the app". The Mini's emulator had stopped overnight with no reason in its log; restarted and re-seeded.
+
 ## [2026-10-22] build | Design watch run, part 2
 
 **Part 2 of the design run finished on `design/watch` with all suites passing; its report is filed.**

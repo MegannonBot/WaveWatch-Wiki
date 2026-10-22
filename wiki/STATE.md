@@ -14,7 +14,7 @@ last_updated: 2026-10-21
 
 | Fact | Value | Since | Source |
 |---|---|---|---|
-| Stage | Web app milestones M0 to M2 built on branch `m0-m2` of `WaveWatch-App` (15 of 16 tickets done, WW-12 partly done; 487 tests pass). Not merged to `main`, not deployed. Artifact v4 remains the live demo. | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
+| Stage | M0 to M2 in the Watch look merged into `main` of `WaveWatch-App` at `5d9a983` (from `design/watch` `7a99b46`; 381 unit, 234 rules, 49 end-to-end, 5 production-build tests passing). Not deployed; emulator only. Next Mini run: four layout fixes and phone access to the test database | 2026-10-22 | Franco's Terminal output, 2026-10-22; [[decisions/2026-10-22_decision-design-watch-merge]] |
 | Name | WaveWatch | 2026-10-20 | [[decisions/2026-10-20_decision-product-name-wavewatch]] |
 | Scope | OSINT and incident coordination: reports, incidents, cases, operations, patrols, SAPS liaison | 2026-10-20 | [[decisions/2026-10-20_decision-osint-incident-coordination]] |
 | First organisation | Wavecrest Watch, Wavecrest, Jeffreys Bay | 2026-10-21 | [[decisions/2026-10-21_decision-built-for-wavecrest-watch]] |
@@ -40,15 +40,13 @@ last_updated: 2026-10-21
 | GitHub | Account `MegannonBot`. `WaveWatch-Wiki` created and the vault pushed (key `id_ed25519_wavewatch`, alias `github-wavewatch`). `WaveWatch-App` created, empty | 2026-10-20 | Franco's Terminal output, 2026-10-20 |
 | Builder | Claude Code on the Mac Mini. First run (M0 to M2) finished 2026-10-20; it ran in auto mode, not the normal mode the brief assumed. The session used Node 20.20.2 (Homebrew has Node 26), so Firebase 12 is pinned. Emulator left running in tmux `emu-ww` | 2026-10-21 | [[reports/2026-10-20_report_m0-m2-run]] |
 | Laptop build | `~/WaveWatch-App` on branch `m0-m2` runs on the laptop (Node 20.20.2, Java 21 from Homebrew, not linked); npm reports 29 vulnerabilities, not investigated | 2026-10-21 | Franco's Terminal output, 2026-10-21 |
-| Design run | Finished on `design/watch` (parts 1 and 2): every screen restyled, eight family shapes, @mention fix; tests 297 unit (40 skipped), 234 rules, 49 end-to-end, 5 production-build, all passing. Five new family colours missing in the app: the vault copy of `tokens.json` was stale until 2026-10-22 (now fixed); the Mini copies it and runs `npm run tokens` | 2026-10-22 | [[reports/2026-10-21_report_design-watch-run-part-2]] |
+| Design run | Finished on `design/watch` at `7a99b46`: every screen restyled, eight family colours and shapes, park and beach colours, @mention fix; 381 unit, 234 rules, 49 end-to-end, 5 production-build tests, all passing, no contrast check skipped. Look check passed and merged into `main` (`5d9a983`) 2026-10-22; four layout fixes queued in `outputs/technology/2026-10-22_layout-fixes/` | 2026-10-22 | Mini summary pasted by Franco, 2026-10-22; [[reports/2026-10-21_report_design-watch-run-part-2]] |
 | Work registry | Not loaded. 37 tickets drafted in `outputs/product/2026-10-20_firebase-build-plan/` | 2026-10-20 | that folder |
 
 ## Needs Franco
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | After the Mini has applied the new `tokens.json` (eight family colours, park and beach): check `design/watch` on your phone in light and dark, then merge | Last step before `main` |
 | 5 | Supply the security companies and camera networks to load; the public-source list kept only the municipal network and the watches ([[research/2026-10-21_research_jbay-role-players]]) | Seeds sources, cameras and presets |
 | 6 | Send Hannes (an attorney) the POPIA questions in `outputs/legal/2026-10-21_popia-questions-hannes/`; file his written answers | Required before Gate 1 |
-| 7 | Time a quick log on a phone (WW-12, target under 20 seconds), on the new look after the design run | Closes WW-12 |
-| 9 | Merge `design/watch` into `main` after the phone check (one merge) | [[decisions/2026-10-21_decision-merge-after-design-check]] |
+| 7 | Time a quick log on a phone (WW-12, target under 20 seconds); needs the app to reach the test database from a phone first (next Mini run) | Closes WW-12 |

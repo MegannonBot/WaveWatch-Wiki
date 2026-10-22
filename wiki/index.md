@@ -54,6 +54,7 @@ last_updated: 2026-10-22
 | [[decisions/2026-10-21_decision-operator-megannon-me]] | WaveWatch is run by Megannon.ME (MEGANNONME (Pty) Ltd), not by the CPF, a neighbourhood watch or a separate body. | active |
 | [[decisions/2026-10-21_decision-web-stack-offline-not-required]] | The web stack stays as approved, but working offline is no longer a requirement; the offline saving already built stays and nothing more is designed or built for it. | active |
 | [[decisions/2026-10-22_decision-design-run-final-choices]] | The map keeps type and Pins or Heat on its top bar, More keeps its list of sections, parks and beaches get their own map colours, demo records read "Demo", and "Create incident" is an outline button. | active |
+| [[decisions/2026-10-22_decision-design-watch-merge]] | Franco passed the look check from screenshots, approved four small part 2 choices, and ruled to merge design/watch into main now with four layout fixes first in the next Mini run. | active |
 
 ## Specs
 
@@ -117,4 +118,4 @@ last_updated: 2026-10-22
 | [[reports/2026-10-21_report_design-watch-run]] | The first part of the WaveWatch Watch design run on branch design/watch: fonts, tokens, theme setting, shell and map done; the rest not done. | active |
 | [[reports/2026-10-21_report_design-watch-run-part-2]] | The second Mini design run finished the WaveWatch Watch look on branch design/watch, applied the four new rulings, and passed every test suite. | active |
 
-*69 pages.*
+*70 pages.*
