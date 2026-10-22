@@ -47,7 +47,7 @@ last_updated: 2026-10-21
 
 | # | Question | Why it matters |
 |---|---|---|
-| 10 | Start the next Mini run: send it "Read and follow ~/wavewatch/WaveWatch-Wiki/outputs/technology/2026-10-22_m3-run/2026-10-22_technology_mini-m3-prompt.md" | Layout fixes, phone access for testing, then M3 cases and analysis |
+| 10 | When the M3 run reports (running 2026-10-22, final test run in progress): read its handover, then the phone test and the run's open choices | Layout fixes, phone access, M3 |
 | 5 | Supply the security companies and camera networks to load; the public-source list kept only the municipal network and the watches ([[research/2026-10-21_research_jbay-role-players]]) | Seeds sources, cameras and presets |
 | 6 | Send Hannes (an attorney) the POPIA questions in `outputs/legal/2026-10-21_popia-questions-hannes/`; file his written answers | Required before Gate 1 |
 | 7 | Time a quick log on a phone (WW-12, target under 20 seconds); needs the app to reach the test database from a phone first (next Mini run) | Closes WW-12 |
